@@ -1,0 +1,75 @@
+.categories__grid {
+    position: relative;
+    left: 1.6%;
+    display: flex;
+    gap: 5rem;
+    width: 97%;
+}
+
+
+
+.category {
+    padding-top: 2rem;
+    padding: 30px;
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 9px;
+    box-shadow: #C3FCD8 4px 4px 13px;
+    transform: scale(1, 1);
+    transition: 0.2s all ease-in-out;
+}
+
+
+.boxs{
+    padding: 15%;
+    padding-top: 2%;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px;
+    color:#C3FCD8;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.boxs p{
+    margin-bottom: 10%;
+}
+
+.health_title{
+    font-size: 40px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-align: center;
+    color:#CCD6F6;
+    margin-bottom: 2%;
+}
+
+.calci{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.container_box {
+    padding: 20px;
+    border-radius: 8px;
+    background:#CCD6F6;
+    width: 85%;
+}
+
+.container_box h4{
+    color: rgb(10,25,47);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container_box p{
+    color: #687391;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.all_box{
+    display: flex;
+    flex-direction: column;
+}

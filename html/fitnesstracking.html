@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="robots" content="index" />
+    <title>All Calculators</title>
+
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/fitnesstracking.css">
 </head>
+
 <body>
+
+    <div class="navbar">
+        <ul>
+          <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+          <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
+          <li><a href="#search-section" class="home" id="ex" onclick="scroll()">Features</a></li>
+          <li><a href="fitnesstracking.html" class="home" id="ex">Fitness Tracking</a></li>
+          <a href="wellness.html" class="home" id="ex">Wellness</a>
+          <a href="communitysupport.html" class="home" id="ex">Community Support</a>
+          <a href="testimonial.html" class="home" id="ex">Testimonial</a>
+        </ul>
+      </div>
+
     <section class="types">
-        <div class="container">
-            <h3>Calculators</h3>
-            <h1 class="categories__title">Health &amp; Fitness Calculators</h1>
-            <p class="categories__description">Planning and living a healthy lifestyle require honest calculations.
-                Input your current and desired body parameters to understand numbers such as body mass index (BMI),
-                ideal weight, calorie intake, and other health indicators. They will help you make informed nutrition,
-                fitness, and overall well-being decisions.</p>
-            <div">
+        <div class="boxs">
+            <h1 class="health_title">Health Calculators for Informed Wellness</h1>
+            <p>Welcome to our suite of health calculators designed to empower you on your wellness journey. These calculators are powerful tools that can help you gain insights into various aspects of your health, providing personalized information tailored to your unique needs. Whether you're looking to monitor your weight, plan for a healthy pregnancy, or optimize your fitness routine, our collection of calculators is here to guide you.</p>
+            <div class="all_box">
+                <div class="calci">
                 <a href="bmi.html" class="category">
-                    <img src="./images/bmi-icon.png" alt="BMI Calculator" class="category__icon">
-                    <div class="category__info">
-                        <h4 class="category__title">BMI Calculator</h4>
-                        <p class="category__description">The free Body Mass Index calculator, also known as BMI,
+                    <div class="container_box">
+                        <h4>BMI Calculator</h4>
+                        <p>The free Body Mass Index calculator, also known as BMI,
                             computes and classifies BMI for children and adults using data obtained from WHO and CDC.
                         </p>
                     </div>
                 </a>
                 <a href="calorie.html" class="category">
-                    <img src="./images/calorie-icon.png" alt="Calorie Calculator" class="category__icon">
-                    <div class="category__info">
-                        <h4 class="category__title">Calorie Calculator</h4>
-                        <p class="category__description">This calorie calculator computes how many calories are required
+                    <div class="container_box">
+                        <h4>Calorie Calculator</h4>
+                        <p>This calorie calculator computes how many calories are required
                             daily to maintain, decrease, or gain weight. Learn about the different types of calories and
                             how they affect you.</p>
                     </div>
                 </a>
                 <a href="bmr.html" class="category">
-                    <img src="./images/bmr-icon.png" alt="BMR Calculator" class="category__icon">
-                    <div class="category__info">
-                        <h4 class="category__title">BMR Calculator</h4>
-                        <p class="category__description">Free BMR calculator uses well-known algorithms to calculate the
+                    <div class="container_box">
+                        <h4>BMR Calculator</h4>
+                        <p>Free BMR calculator uses well-known algorithms to calculate the
                             basal metabolic rate. Also, find out more about the factors that influence BMR.</p>
                     </div>
                 </a>
-
+            </div>
+            <div class="calci">
+                <a href="bmi.html" class="category">
+                    <div class="container_box">
+                        <h4>BMI Calculator</h4>
+                        <p>The free Body Mass Index calculator, also known as BMI,
+                            computes and classifies BMI for children and adults using data obtained from WHO and CDC.
+                        </p>
+                    </div>
+                </a>
+                <a href="calorie.html" class="category">
+                    <div class="container_box">
+                        <h4>Calorie Calculator</h4>
+                        <p>This calorie calculator computes how many calories are required
+                            daily to maintain, decrease, or gain weight. Learn about the different types of calories and
+                            how they affect you.</p>
+                    </div>
+                </a>
+                <a href="bmr.html" class="category">
+                    <div class="container_box">
+                        <h4>BMR Calculator</h4>
+                        <p>Free BMR calculator uses well-known algorithms to calculate the
+                            basal metabolic rate. Also, find out more about the factors that influence BMR.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
     <script src="js/script.js"></script>
 </body>
+
 </html>
