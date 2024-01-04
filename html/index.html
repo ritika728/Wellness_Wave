@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Wave</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <div class="pic">
+  <div class="navbar">
+    <ul>
+      <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+      <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
+      <li><a href="#search-section" class="home" id="ex" onclick="scroll()">Features</a></li>
+      <li><a href="fitnesstracking.html" class="home" id="ex">Fitness Tracking</a></li>
+      <a href="wellness.html" class="home" id="ex">Wellness</a>
+      <a href="communitysupport.html" class="home" id="ex">Community Support</a>
+      <a href="testimonial.html" class="home" id="ex">Testimonial</a>
+    </ul>
+  </div>
+  <h2 class="head">Wellness Wave - Your Wellness, Your Way</h2>
+  <div class="main">
+    <div class="main2">
+  <div class="hero-section">
+    <div class="about_sec">
+      <h2>ABOUT</h2>
+      <p>Welcome to WellnessWave, your holistic health and fitness companion designed to empower you on your journey to well-being. At Wellness Wave, we believe that true wellness extends beyond mere physical fitness – it encompasses nutrition, mental health, community support, and lifestyle choices.</p>
+    </div>
+  </div>
+
+
+  <div class="hero-section">
+    <div class="about_sec">
+      <h2>OUR MISSION</h2>
+      <p>Our mission is to inspire and support individuals in achieving their optimal state of health and vitality. We aim to provide a comprehensive platform that goes beyond traditional fitness tracking, offering a blend of practical tools, expert advice, and a supportive community to guide you on your path to wellness.</p>
+    </div>
+  </div>
+</div>
+<img class="pict" src="../pic.png"> 
+</div>
+</div>
+
+   <div class="hero-section">
+    <div class="about_sec">
+      <h2>WHAT'S IN IT ?</h2>
+      <div class="cont">
+      <div class="box"><h3>Fitness Training</h3></div>
+      <div class="box"><h3>Wellness</h3></div>
+      <div class="box"><h3>Community Support</h3></div>
+      <div class="box"><h3>Settings</h3></div>
+      <div class="box"><h3>Contact</h3></div>
+    </div>
+    </div>
+  </div>
+  <div class = "newsletter">
+        <h2>Subscribe to our NewsLetter</h2>
+        <div> 
+            <input type="email"/>
+            <button type='submit'></button>
+        </div>
+</div>
+
+
+  <script>
+    // Get the "Explore Exercises" button element
+    const exploreExercisesButton = document.querySelector(".ex-btn");
+
+    // Add event listener to scroll to the search section when clicked
+    exploreExercisesButton.addEventListener("click", () => {
+      const searchSection = document.getElementById("search-section");
+      searchSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
