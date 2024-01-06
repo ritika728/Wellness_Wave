@@ -1,153 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellness Wave</title>
+    <title>Wellness Wave - New Page</title>
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-ezlrJyRBD9N5ZXUUqNl8XqVAjjc6b3lc1ce6Rrp+9/gs6gKDT3Vl+kD5tr5D2Gff" crossorigin="anonymous">
+
 </head>
-<body>
-  <div class="pic">
-  <div class="navbar">
-    <ul>
-      <li><img src="./images/logo.png" alt="logo" class="logo"></li>
-      <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
-      <button class="ex-btn" id="exer-btn" onclick="scroll();">Features</button>
-      <li><a href="fitnesstracking.html" class="home" id="ex">Fitness Tracking</a></li>
-      <a href="wellness.html" class="home" id="ex">Wellness</a>
-      <a href="#contact" class="home" id="ex">Contact</a>
-      <a href="testimonial.html" class="home" id="ex">Testimonial</a>
-    </ul>
-  </div>
-  <h2 class="head">Wellness Wave - Your Wellness, Your Way</h2>
-  <div class="main">
-    <div class="main2">
-  <div class="hero-section">
-    <div class="about_sec">
-      <h2>ABOUT</h2>
-      <p>Welcome to WellnessWave, your holistic health and fitness companion designed to empower you on your journey to well-being. At Wellness Wave, we believe that true wellness extends beyond mere physical fitness – it encompasses nutrition, mental health, community support, and lifestyle choices.</p>
+
+<body style="background-image: url('../main.jpg');">
+    <header>
+        <h1>WELLNESS WAVE</h1>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html" class="home">Home</a></li>
+            <li><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li><a href="wellness.html" class="home">Wellness</a></li>
+            <li><a href="#whats-in-it" class="home">Testimonial</a></li>
+        </ul>
     </div>
-  </div>
 
-
-  <div class="hero-section">
-    <div class="about_sec">
-      <h2>OUR MISSION</h2>
-      <p>Our mission is to inspire and support individuals in achieving their optimal state of health and vitality. We aim to provide a comprehensive platform that goes beyond traditional fitness tracking, offering a blend of practical tools, expert advice, and a supportive community to guide you on your path to wellness.</p>
+    <div class="section" id="about">
+        <h2>About</h2>
+        <p>Welcome to Wellness Wave, your holistic health and fitness companion designed to empower you on your journey to well-being. At Wellness Wave, we believe that true wellness extends beyond mere physical fitness – it encompasses nutrition, mental health, community support, and lifestyle choices.</p>
     </div>
-  </div>
-</div>
-<img class="pict" src="../pic.png"> 
-</div>
-</div>
 
-   <div class="hero-section">
-    <div class="about_sec" id="features">
-      <h2>WHAT'S IN IT ?</h2>
-      <div class="cont">
-      <div class="box"><h3>Fitness Training</h3></div>
-      <div class="box"><h3>Wellness</h3></div>
-      <div class="box"><h3>Community Support</h3></div>
-      <div class="box"><h3>Settings</h3></div>
-      <div class="box"><h3>Contact</h3></div>
+    <div class="section" id="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to inspire and support individuals in achieving their optimal state of health and vitality. We aim to provide a comprehensive platform that goes beyond traditional fitness tracking, offering a blend of practical tools, expert advice, and a supportive community to guide you on your path to wellness.</p>
     </div>
+
+    <!-- <img class="section" src="../pic.png" alt="Wellness Image"> -->
+
+    <div class="section" id="whats-in-it">
+        <h2>What's In It</h2>
+        <div class="cont">
+            <div class="box"><h3>Fitness Training</h3></div>
+            <div class="box"><h3>Wellness</h3></div>
+            <div class="box"><h3>Community Support</h3></div>
+            <div class="box"><h3>Settings</h3></div>
+            <div class="box"><h3>Contact</h3></div>
+        </div>
     </div>
-  </div>
-  <div class = "newsletter">
-        <h2>Subscribe to our NewsLetter</h2>
-        <div> 
-            <input type="email"/>
-            <button type='submit'></button>
-        </div>
-</div>
-<div class='container' id="contact">
-  <div class='container1'>
-        <div class='title'>
-          <h1>CONTACT ME</h1>
-        </div>
-        <form onSubmit={sendemail}>
-          <div class="total">
-          <div class="socialsmain">
-          <h1>GETTING IN TOUCH IS EASY!</h1>
-          <h5>
-          I hope you enjoyed looking at my work. I am open to collaborate for interesting projects. Feel free to drop of any feedback and let's connect!
-          </h5>
-          <div class="socials">
-            <Link href="mailto:ritikamalik100102@gmail.com?"style={{marginLeft:"0px"}}class="icons" target="_blank"><EmailIcon/></Link>
-            <Link href="https://twitter.com/ritikatwts" class="icons" target="_blank"><TwitterIcon/></Link>
-            <Link href="https://github.com/ritika728" class="icons" target="_blank"><GitHubIcon/></Link>
-            <Link href="https://www.linkedin.com/in/ritika-malik-must/" target="_blank" class="icons"><LinkedInIcon/></Link>
-         </div>
-         </div>
-         <div class='fbtn'>
-          <div class="all">
-          <div class="box2">
-              <div class="form">
-                <input class="input"
-                  type='text'
-                  name='name'
-                  placeholder='Your Name'
-                  required 
-                />
-                 </div>
-              <div class="form">
-                <input class="input"
-                  name='email'
-                  id='email'
-                  placeholder='Your Email'
-                  required
-                />
-            </div>
-            <div class="form">
-                <input class="input"
-                  name='number'
-                  id='number'
-                  placeholder='Your Phone Number'
-                  required
-                />
-            </div>
 
-            </div>
-          <div class="block">
-            <textarea class="message"
-              name='message'
-              id='message'
-              placeholder ='Your Message'
-              required
-            ></textarea>
-          </div>
-          </div>
-          <div class="contactbtn">
-      <button type='submit'class="submit">SUBMIT
-          </button>
+    <div class="newsletter section" id="subscribe">
+        <h2>Subscribe to our Newsletter</h2>
+        <div>
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button type="button" onclick="subscribeNewsletter()">Subscribe</button>
         </div>
-        <div class="socials2">
-            <Link href="mailto:ritikamalik100102@gmail.com?"style={{marginLeft:"0px"}}class="icons" target="_blank"><EmailIcon/></Link>
-            <Link href="https://twitter.com/ritikatwts" class="icons" target="_blank"><TwitterIcon/></Link>
-            <Link href="https://github.com/ritika728" class="icons" target="_blank"><GitHubIcon/></Link>
-            <Link href="https://www.linkedin.com/in/ritika-malik-must/" target="_blank" class="icons"><LinkedInIcon/></Link>
-         </div>
-          </div>
+    </div>
+    <div id="notification"></div>
 
-        </div>
+    <div class="contact section" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            
         </form>
-      </div>
     </div>
-
-
-  <script>
-    // Get the "Explore Exercises" button element
-    const exploreExercisesButton = document.querySelector(".ex-btn");
-
-    // Add event listener to scroll to the search section when clicked
-    exploreExercisesButton.addEventListener("click", () => {
-      const searchSection = document.getElementById("features");
-      searchSection.scrollIntoView({ behavior: "smooth" });
-    });
-
-  </script>
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="../javascript/newsletter.js"></script>
 </body>
 
 </html>
