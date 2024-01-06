@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Duration Calculator</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/bmi.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+          <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+          <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
+          <li><a href="#search-section" class="home" id="ex" onclick="scroll()">Features</a></li>
+          <li><a href="fitnesstracking.html" class="home" id="ex">Fitness Tracking</a></li>
+          <a href="wellness.html" class="home" id="ex">Wellness</a>
+          <a href="communitysupport.html" class="home" id="ex">Community Support</a>
+          <a href="testimonial.html" class="home" id="ex">Testimonial</a>
+        </ul>
+      </div>
+      <h1 class="calci_title">Sleep Duration Calculator</h1>
+<div class="out">
+<div class="calculator">
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" placeholder="Enter your age">
+
+    <button onclick="calculateSleepDuration()">Calculate</button>
+
+    <p id="result"></p>
+</div>
+</div>
+
+<script src="../javascript/sleep.js"></script>
+
+</body>
+</html>

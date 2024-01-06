@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellness Wave</title>
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
   <div class="pic">
@@ -12,10 +13,10 @@
     <ul>
       <li><img src="./images/logo.png" alt="logo" class="logo"></li>
       <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
-      <li><a href="#search-section" class="home" id="ex" onclick="scroll()">Features</a></li>
+      <button class="ex-btn" id="exer-btn" onclick="scroll();">Features</button>
       <li><a href="fitnesstracking.html" class="home" id="ex">Fitness Tracking</a></li>
       <a href="wellness.html" class="home" id="ex">Wellness</a>
-      <a href="contact.html" class="home" id="ex">Contact</a>
+      <a href="#contact" class="home" id="ex">Contact</a>
       <a href="testimonial.html" class="home" id="ex">Testimonial</a>
     </ul>
   </div>
@@ -42,7 +43,7 @@
 </div>
 
    <div class="hero-section">
-    <div class="about_sec">
+    <div class="about_sec" id="features">
       <h2>WHAT'S IN IT ?</h2>
       <div class="cont">
       <div class="box"><h3>Fitness Training</h3></div>
@@ -60,6 +61,79 @@
             <button type='submit'></button>
         </div>
 </div>
+<div class='container' id="contact">
+  <div class='container1'>
+        <div class='title'>
+          <h1>CONTACT ME</h1>
+        </div>
+        <form onSubmit={sendemail}>
+          <div class="total">
+          <div class="socialsmain">
+          <h1>GETTING IN TOUCH IS EASY!</h1>
+          <h5>
+          I hope you enjoyed looking at my work. I am open to collaborate for interesting projects. Feel free to drop of any feedback and let's connect!
+          </h5>
+          <div class="socials">
+            <Link href="mailto:ritikamalik100102@gmail.com?"style={{marginLeft:"0px"}}class="icons" target="_blank"><EmailIcon/></Link>
+            <Link href="https://twitter.com/ritikatwts" class="icons" target="_blank"><TwitterIcon/></Link>
+            <Link href="https://github.com/ritika728" class="icons" target="_blank"><GitHubIcon/></Link>
+            <Link href="https://www.linkedin.com/in/ritika-malik-must/" target="_blank" class="icons"><LinkedInIcon/></Link>
+         </div>
+         </div>
+         <div class='fbtn'>
+          <div class="all">
+          <div class="box2">
+              <div class="form">
+                <input class="input"
+                  type='text'
+                  name='name'
+                  placeholder='Your Name'
+                  required 
+                />
+                 </div>
+              <div class="form">
+                <input class="input"
+                  name='email'
+                  id='email'
+                  placeholder='Your Email'
+                  required
+                />
+            </div>
+            <div class="form">
+                <input class="input"
+                  name='number'
+                  id='number'
+                  placeholder='Your Phone Number'
+                  required
+                />
+            </div>
+
+            </div>
+          <div class="block">
+            <textarea class="message"
+              name='message'
+              id='message'
+              placeholder ='Your Message'
+              required
+            ></textarea>
+          </div>
+          </div>
+          <div class="contactbtn">
+      <button type='submit'class="submit">SUBMIT
+          </button>
+        </div>
+        <div class="socials2">
+            <Link href="mailto:ritikamalik100102@gmail.com?"style={{marginLeft:"0px"}}class="icons" target="_blank"><EmailIcon/></Link>
+            <Link href="https://twitter.com/ritikatwts" class="icons" target="_blank"><TwitterIcon/></Link>
+            <Link href="https://github.com/ritika728" class="icons" target="_blank"><GitHubIcon/></Link>
+            <Link href="https://www.linkedin.com/in/ritika-malik-must/" target="_blank" class="icons"><LinkedInIcon/></Link>
+         </div>
+          </div>
+
+        </div>
+        </form>
+      </div>
+    </div>
 
 
   <script>
@@ -68,7 +142,7 @@
 
     // Add event listener to scroll to the search section when clicked
     exploreExercisesButton.addEventListener("click", () => {
-      const searchSection = document.getElementById("search-section");
+      const searchSection = document.getElementById("features");
       searchSection.scrollIntoView({ behavior: "smooth" });
     });
 
