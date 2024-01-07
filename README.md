@@ -23,7 +23,7 @@ To get started with Wellness Wave, simply open the [live demo](https://your-well
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/wellness-wave.git
+   git clone https://github.com/your-username/wellness_wave.git
    ```
 
 2. Open the `index.html` file in your preferred web browser.
