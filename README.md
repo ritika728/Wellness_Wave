@@ -36,5 +36,5 @@ To get started with Wellness Wave, simply open the [live demo](https://your-well
 
 ## Contributing
 
-We welcome contributions from the community. If you have ideas for improvements, new features, or find any issues, feel free to open an [issue](https://github.com/your-username/wellness-wave/issues) or submit a [pull request](https://github.com/your-username/wellness-wave/pulls).
+We welcome contributions from the community. If you have ideas for improvements, new features, or find any issues, feel free to open an [issue](https://github.com/your-username/wellness-wave/issues)
 
