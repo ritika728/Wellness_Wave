@@ -6,41 +6,6 @@ body {
   color: #333;
 }
 
-.navbar {
-  background-color: #333;
-  color: #fff;
-  overflow: hidden;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: #333;
-}
-
-.logo {
-  max-height: 50px;
-  margin-top: -5px;
-}
-
 .calci_title {
   color: #3498db;
   text-align: center;
@@ -94,4 +59,13 @@ button:hover {
 #result {
   font-weight: bold;
   margin-top: 20px;
+}
+
+.calorie_box{
+  display: flex;
+  flex-direction:column;
+}
+
+.gender_box{
+  display: flex;
 }

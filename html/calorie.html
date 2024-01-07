@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/calci.css">
+</head>
+
+<body>
+    <header>
+        <h1>WELLNESS WAVE</h1>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li><a href="wellness.html" class="home">Wellness</a></li>
+            <li><a href="testimonial.html" class="home">Testimonial</a></li>
+        </ul>
+    </div>
+    <h1 class="calci_title">Calorie Calculator</h1>
+    <div class="out">
+        <div class="calculator">
+            <form id="calorieForm">
+                <div class="gender_box">
+                <label for="gender">Gender :</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+                <label for="age">Age (years):</label>
+                <input type="number" id="age" name="age" min="1" required>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" min="1" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" min="1" required>
+
+                <label for="activityLevel">Activity Level:</label>
+                <div class="calorie_box">
+                <select id="activityLevel" name="activityLevel" required>
+                    <option value="sedentary">Sedentary (little or no exercise)</option>
+                    <option value="lightlyActive">Lightly Active (light exercise/sports 1-3 days/week)</option>
+                    <option value="moderatelyActive">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+                    <option value="veryActive">Very Active (hard exercise/sports 6-7 days a week)</option>
+                    <option value="extraActive">Extra Active (very hard exercise/sports & physical job or 2x training)
+                    </option>
+                </select>
+
+                <button type="button" onclick="calculateCalories()">Calculate Calories</button>
+            </div>
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="../javascript/calorie.js"></script>
+</body>
+
+</html>
