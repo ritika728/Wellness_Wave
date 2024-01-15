@@ -60,3 +60,11 @@ section h2 {
 section p {
     line-height: 1.6;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}

@@ -1,17 +1,41 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: url("../images/mntlhlth.jpg");
+    
+}
+
+header h1 {
+    margin: 0;
 }
 
 .content {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
+
