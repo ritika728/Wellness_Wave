@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Fat Calculator</title>
+    <link rel="stylesheet" href="../css_files/home.css" />
+    <link rel="stylesheet" href="../css_files/calci.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>WELLNESS WAVE</h1>
+    </header>
+    <div class="navbar">
+      <ul>
+        <li><a href="../index.html" class="home">Home</a></li>
+        <li><a href="fitnesstracking.html" class="home">Tracking</a></li>
+        <li><a href="wellness.html" class="home">Wellness</a></li>
+        <li><a href="testimonial.html" class="home">Testimonial</a></li>
+      </ul>
+    </div>
+    <h1 class="calci_title">Body Fat Calculator</h1>
+    <div class="out">
+      <div class="calculator">
+        <form id="bodyfatform">
+
+          <div class="gender_box">
+            <label for="gender">Gender :</label>
+            <select id="gender" name="gender" required>
+              <option value="adult male"> Male</option>
+              <option value="adult female"> Female</option>
+            </select>
+          </div>
+
+          <label for="age">Enter your Age:</label>
+          <input type="number" id="age" placeholder="Enter your Age" />
+          
+          <label for="bmi">Enter your BMI:</label>
+          <input type="number" id="bmi" placeholder="Enter your BMI" />
+
+          <button type="button" onclick="calculateBodyFat()">Calculate Body Fat</button>
+        </form>
+
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="../javascript/body_fat.js"></script>
+  </body>
+</html>
