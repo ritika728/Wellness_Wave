@@ -1,11 +1,4 @@
-html,
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
+html, body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -19,14 +12,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    background-image: url("../images/mntlhlth.jpg");
+    background-image: url("../images/sptwl.jpg");
     
 }
 
 header h1 {
     margin: 0;
 }
-
 .content {
     max-width: 800px;
     margin: 2rem auto;
@@ -34,6 +26,7 @@ header h1 {
     background-color: #f4f4f4;
     border-radius: 8px;
 }
+
 
 section {
     margin-bottom: 2rem;
