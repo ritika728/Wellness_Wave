@@ -1,0 +1,15 @@
+.container2{
+    display:block;
+    justify-content:space-around;
+    margin: 2px ;
+}
+.a{
+    color:white;
+    text-decoration: none;
+}
+.a:hover {
+    color: grey;
+    background-color:none;
+    text-decoration-color:grey;
+    transition: 0.3s ease-out;
+  }
