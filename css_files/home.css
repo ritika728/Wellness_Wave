@@ -31,6 +31,7 @@ header {
   display: flex;
   justify-content: center;
   font-size: 25px;
+  width: 100%;
 }
 
 .navbar li {
