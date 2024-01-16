@@ -75,3 +75,8 @@ nav a:hover {
     background-color: #fff;
     transition: max-height 0.5s ease-in-out;
   }
+
+  h2{
+    text-align: center;
+    color: #3498db;
+  }
