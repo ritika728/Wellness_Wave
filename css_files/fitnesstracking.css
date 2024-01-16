@@ -1,4 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 .types {
+    /* text-align: center; */
     max-width: 1300px;
     margin: 20px auto;
     padding: 20px;
@@ -7,52 +14,65 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.health_title {
-    color: #3498db;
-}
-
-.types p {
-    line-height: 1.6;
-}
-
-.all_box {
+.boxs {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
-
-/* Add the following styles to your existing styles */
-
 .calci {
-    box-sizing: border-box;
-    margin-bottom: 40px;
-    margin-right: 10px; /* Added margin for spacing between calculators */
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-@media (max-width: 768px) {
-    .calci {
-        width: 100%; /* Make calculators full width on smaller screens */
-        margin-right: 0; /* Remove right margin on smaller screens */
-    }
-}
-
 
 .category {
     text-decoration: none;
     color: #333;
+    flex: 0 0 30%; /* Adjust the width based on your preference */
+    margin: 15px;
 }
 
 .container_box {
-    background-color: #ecf0f1;
-    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    margin-right: 30px;
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
 }
 
 .container_box h4 {
     color: #3498db;
+}
+
+h4 {
+    /* margin-top: 0; */
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    /* margin-bottom: 0; */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.health_title {
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .category {
+        flex: 0 0 100%; /* Full width on smaller screens */
+    }
 }
