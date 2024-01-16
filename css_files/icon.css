@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 .a:hover {
-    color: grey;
+    color: #00bcd4;
     background-color:none;
     text-decoration-color:grey;
     transition: 0.3s ease-out;
