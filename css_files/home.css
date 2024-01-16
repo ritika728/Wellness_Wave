@@ -1,28 +1,72 @@
 body {
   font-family: 'Arial', sans-serif;
-  margin: 0;
+  margin: 80px;
   padding: 0;
   color: #333;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+
+  /* changed */
+  margin-top: 150px; /*Adjust this value to match the height of your fixed navbar and header */
+
 }
 
 header {
-  text-align: center;
+  /* text-align: center;
   letter-spacing: 0.5em;
   font-weight: 900;
   background-color: #00bcd4;
   color: #fff;
   text-align: center;
+  padding: 1rem 0; */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.5em;
+  font-weight: 900;
+  background-color: #00bcd4;
+  color: #fff;
   padding: 1rem 0;
+  z-index: 1000; /* to Ensure the header is above other elements */
+
 }
 
 .navbar {
+  /* background-color: #00796b;
+  overflow: hidden; */
+
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
   background-color: #00796b;
   overflow: hidden;
+  /* padding: 1rem 0; */
+  z-index: 1000; /* to Ensure the navbar is above other elements */
+
 }
+
+#navbar_home{
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: #00796b;
+  overflow: hidden;
+  z-index: 1000; /* to Ensure the navbar is above other elements */
+
+} 
+
+#body_home{
+   /* changed */
+  margin-top: 180px;
+}
+
 
 .navbar ul {
   list-style: none;
