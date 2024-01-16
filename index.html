@@ -80,18 +80,18 @@
               <form>
                 <div class="mb-3">
                   <label for="exampleInputName" class="form-label text-dark">Name</label>
-                  <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
+                  <input type="text" class="form-control" id="exampleInputName" required placeholder="Enter your name">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail2" class="form-label text-dark">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter your email">
+                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" required placeholder="Enter your email">
                   <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputMessage" class="form-label text-dark">Message</label>
-                  <textarea class="form-control" id="exampleInputMessage" rows="4" placeholder="feel free to ask your queries!"></textarea>
+                  <textarea class="form-control" id="exampleInputMessage" rows="4" required placeholder="feel free to ask your queries!"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" onclick="sendMail()">Submit</button>
+                <button type="submit" class="btn btn-primary" id="submitButton" onclick="sendMail()">Submit</button>
               </form>
               </div>
             </div>
