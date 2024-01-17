@@ -98,7 +98,6 @@ a:hover{
 #about{
   margin-top: 17%;
 }
-
 .section {
   max-width: 800px;
   margin: 20px auto;
@@ -123,10 +122,19 @@ a:hover{
 
 .box {
   background-color: #ecf0f1;
-  padding: 15px;
+  padding:10px 22px 10px 22px;
+  margin: 10px 0px 0px 0px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  
+  transition: box-shadow 0.3s ease;
+}
+.box:hover {
+  background-color: rgba(66, 147, 213, 0.8);
+  color: #ecf0f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 
 .newsletter input {
