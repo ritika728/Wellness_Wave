@@ -1,13 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
 .types {
     /* text-align: center; */
     max-width: 1300px;
     margin: 20px auto;
+    margin-top: 17%;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -48,24 +43,6 @@ body {
     color: #3498db;
 }
 
-h4 {
-    /* margin-top: 0; */
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-p {
-    /* margin-bottom: 0; */
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
 .health_title {
     color: #3498db;
@@ -76,3 +53,9 @@ p {
         flex: 0 0 100%; /* Full width on smaller screens */
     }
 }
+
+.navlist:hover{
+    background-color: #333;
+    opacity: 0.75;
+    border-radius: 1rem;
+  }
