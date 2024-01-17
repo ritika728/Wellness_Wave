@@ -69,3 +69,10 @@ button:hover {
 .gender_box{
   display: flex;
 }
+
+
+.navlist:hover{
+  background-color: #333;
+  opacity: 0.75;
+  border-radius: 1rem;
+}

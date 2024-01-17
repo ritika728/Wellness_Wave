@@ -65,6 +65,9 @@ a{
     text-decoration: none;
 }
 
-a:hover{
-    text-decoration: underline;
-}
+
+.navlist:hover{
+    background-color: #333;
+    opacity: 0.75;
+    border-radius: 1rem;
+  }
