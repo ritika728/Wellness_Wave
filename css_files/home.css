@@ -130,6 +130,10 @@ a:hover{
   
   transition: box-shadow 0.3s ease;
 }
+
+.box h3{
+  font-size: 17px;
+}
 .box:hover {
   background-color: rgba(66, 147, 213, 0.8);
   color: #ecf0f1;
@@ -264,6 +268,8 @@ p {
 .a{
   color:white;
   text-decoration: none;
+  font-size: 15px;
+  padding: 5px;
 }
 .a:hover {
   color: #00bcd4;
@@ -290,4 +296,3 @@ p {
   opacity: 0.75;
   border-radius: 1rem;
 }
-
