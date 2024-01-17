@@ -43,3 +43,9 @@
     text-align: center;
     color: #3498db;
   }
+
+  .navlist:hover{
+    background-color: #333;
+    opacity: 0.75;
+    border-radius: 1rem;
+  }
