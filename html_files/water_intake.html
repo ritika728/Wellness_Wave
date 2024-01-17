@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="../css_files/home.css">
+    <link rel="stylesheet" href="../css_files/calci.css">
+</head>
+
+<body>
+    <header>
+        <h1>WELLNESS WAVE</h1>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="../index.html" class="home">Home</a></li>
+            <li><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li><a href="wellness.html" class="home">Wellness</a></li>
+            <li><a href="testimonial.html" class="home">Testimonial</a></li>
+        </ul>
+    </div>
+    <h1 class="calci_title">Water Intake Calculator</h1>
+    <div class="out">
+        <div class="calculator">
+            <form id="waterform">
+                <div class="gender_box">
+                <label for="gender">Gender : </label>
+                <select id="gender" name="gender" required>
+                    <option value="male"> Male</option>
+                    <option value="female"> Female</option>
+                </select>
+            </div>
+
+                <label for="weight">Weight (kg) : </label>
+                <input type="number" id="weight" name="weight" min="1" required>
+
+                <label for="activityLevel">Activity Level:</label>
+                <div class="calorie_box">
+                <select id="activityLevel" name="activityLevel" required>
+                    <option value="sedentary">Sedentary LifeStyle ( ~10 min ) </option>
+                    <option value="lightlyActive">Lightly Active LifeStyle ( ~30 min ) </option>
+                    <option value="moderatelyActive">Moderately Active LifeStyle ( ~50 min ) </option>
+                    <option value="veryActive">Very Active LifeStyle ( >90 min ) </option>
+                </select>
+                </div>
+                 
+                <label for="climate">Climate:</label>
+                <div class="climate_box">
+                <select id="climate" name="climate" required>
+                    <option value="veryCold">Too Cold</option>
+                    <option value="cold">Cold</option>
+                    <option value="hot">Hot</option>
+                    <option value="veryHot">Too Hot</option>
+                </select>
+                </div>
+
+                <button type="button" onclick="calculateWater()">Calculate Water Requirement</button>
+            <!-- </div> -->
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="../javascript/water_intake.js"></script>
+</body>
+
+</html>

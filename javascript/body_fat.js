@@ -61,4 +61,13 @@ function getBodyfatcategory(bodyfatresult) {
     return message;
 }
 
+// Event listener for the button click
+document
+  .getElementById("bodyfatform")
+  .addEventListener("submit", function (event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    calculateBodyFat();
+  });
+
 
