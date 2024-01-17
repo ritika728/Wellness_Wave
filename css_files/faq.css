@@ -1,10 +1,15 @@
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.faq_container {
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 17%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq_container h2{
+  color: #00bcd4;
 }
 
 #faq-container {
