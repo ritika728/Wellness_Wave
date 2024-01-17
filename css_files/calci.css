@@ -69,3 +69,8 @@ button:hover {
 .gender_box{
   display: flex;
 }
+
+.climate_box {
+  display: flex;
+  flex-direction: column;
+}
