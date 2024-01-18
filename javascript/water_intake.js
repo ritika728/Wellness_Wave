@@ -17,9 +17,9 @@ function calculateWater() {
   let waterReq = weight * 0.033;
 
   if (gender === "male") {
-    waterReq += 0.4;
+    waterReq += 0.25;
   } else if (gender === "female") {
-    waterReq += 0.3;
+    waterReq += 0.15;
   }
   // activity factor
   if (activityLevel === "sedentary") {
