@@ -8,6 +8,8 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    min-height: 100vh;
+    background-image: url("../images/physical-bg5.jpg");
 }
 
 header h1 {
@@ -17,7 +19,10 @@ header h1 {
     max-width: 800px;
     margin: 2rem auto;
     margin-top: 17%;
-    padding: 0 1rem;
+    padding: 20px;
+    border-radius: 8px;
+    background-color:  #f4f4f4;
+    border-width: 2px;  
 }
 
 section {
