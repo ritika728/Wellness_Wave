@@ -60,6 +60,14 @@ git push origin your-branch-name
 9. Open a pull request on GitHub to propose your changes for review and integration.
 
 <br/>
+
+## Contributors
+
+<p align="center">
+<a href="https://github.com/ritika728/wellness_wave/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ritika728/wellness_wave" />
+</a>
+</p>
 <br/>
 
 
