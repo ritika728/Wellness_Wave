@@ -1,0 +1,47 @@
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: url("../images/ImageForArticle_22647_16545264138148394.webp");
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    margin-top: 17%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.navlist:hover{
+    background-color: #333;
+    opacity: 0.75;
+    border-radius: 1rem;
+  }
