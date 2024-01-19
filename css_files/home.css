@@ -277,8 +277,10 @@ p {
 .a {
   color: white;
   text-decoration: none;
+
   font-size: 15px;
   padding: 5px;
+
 }
 
 .a:hover {
@@ -308,8 +310,6 @@ p {
   border-radius: 1rem;
 }
 
-
-
 #scrollToTopBtn {
   display: none;
   position: fixed;
@@ -328,3 +328,4 @@ p {
 #scrollToTopBtn:hover {
   background-color: rgb(43, 43, 43);
 }
+

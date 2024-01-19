@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
   const faqContainer = document.getElementById('faq-container');
   const questions = [
       { question: 'What is Wellness Wave all about?', answer: 'Wellness Wave is a platform dedicated to promoting holistic well-being. We offer a range of resources, articles, and tools to help you enhance your physical, mental, and emotional health.' },
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
       questionElement.classList.add('faq-question');
       questionElement.innerHTML = `<strong>${index + 1}. ${q.question}</strong>`;
 
+
       const answerElement = document.createElement('div');
       answerElement.classList.add('faq-answer');
       answerElement.textContent = q.answer;
@@ -26,14 +28,16 @@ document.addEventListener('DOMContentLoaded', function () {
       answerElement.style.display = 'none';
 
       questionElement.addEventListener('click', function () {
+
           answerElement.style.display = answerElement.style.display === 'none' ? 'block' : 'none';
+
       });
 
       faqContainer.appendChild(questionElement);
       faqContainer.appendChild(answerElement);
+
   });
 });
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
