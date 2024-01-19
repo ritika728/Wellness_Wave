@@ -27,6 +27,10 @@ body {
   text-align: center;
 }
 
+#bodyfatform {
+  width: 550px;
+}
+
 label {
   display: block;
   margin: 10px 0;
@@ -74,7 +78,7 @@ button:hover {
 .climate_box {
   display: flex;
   flex-direction: column;
-
+}
 
 .navlist:hover{
   background-color: #333;
