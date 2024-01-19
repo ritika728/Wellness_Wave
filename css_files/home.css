@@ -7,7 +7,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  margin-top: 150px; 
+  margin-top: 150px;
 
 }
 
@@ -22,7 +22,8 @@ header {
   background-color: #00bcd4;
   color: #fff;
   padding: 1rem 0;
-  z-index: 1000; /* to Ensure the header is above other elements */
+  z-index: 1000;
+  /* to Ensure the header is above other elements */
 
 }
 
@@ -33,9 +34,10 @@ header {
   width: 100%;
   background-color: #00796b;
   overflow: hidden;
-  z-index: 1000; 
+  z-index: 1000;
 
 }
+
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -58,11 +60,11 @@ section p {
   line-height: 1.6;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
@@ -95,9 +97,10 @@ a:hover{
   }
 }
 
-#about{
+#about {
   margin-top: 17%;
 }
+
 .section {
   max-width: 800px;
   margin: 20px auto;
@@ -122,18 +125,19 @@ a:hover{
 
 .box {
   background-color: #ecf0f1;
-  padding:10px 22px 10px 22px;
+  padding: 10px 22px 10px 22px;
   margin: 10px 0px 0px 0px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  
+
   transition: box-shadow 0.3s ease;
 }
 
-.box h3{
+.box h3 {
   font-size: 17px;
 }
+
 .box:hover {
   background-color: rgba(66, 147, 213, 0.8);
   color: #ecf0f1;
@@ -213,8 +217,10 @@ footer {
 }
 
 .socials img {
-  width: 30px; /* Adjust the size as needed */
-  height: 30px; /* Adjust the size as needed */
+  width: 30px;
+  /* Adjust the size as needed */
+  height: 30px;
+  /* Adjust the size as needed */
 }
 
 p {
@@ -253,28 +259,32 @@ p {
 
 .right .form-control {
   width: 100%;
-  max-width: 600px; /* Adjust the maximum width as needed */
+  max-width: 600px;
+  /* Adjust the maximum width as needed */
 }
 
-.footer h2{
+.footer h2 {
   text-align: center;
   color: #00bcd4;
 }
-.container2{
-  display:block;
-  justify-content:space-around;
-  margin: 2px ;
+
+.container2 {
+  display: block;
+  justify-content: space-around;
+  margin: 2px;
 }
-.a{
-  color:white;
+
+.a {
+  color: white;
   text-decoration: none;
   font-size: 15px;
   padding: 5px;
 }
+
 .a:hover {
   color: #00bcd4;
-  background-color:none;
-  text-decoration-color:grey;
+  background-color: none;
+  text-decoration-color: grey;
   transition: 0.3s ease-out;
 }
 
@@ -287,12 +297,34 @@ p {
 
   .contact-form .right {
     padding-left: 0;
-    margin-top: 10px; /* Adjust as needed */
+    margin-top: 10px;
+    /* Adjust as needed */
   }
 }
 
-.navlist:hover{
+.navlist:hover {
   background-color: #333;
   opacity: 0.75;
   border-radius: 1rem;
+}
+
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius:50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: rgb(43, 43, 43);
 }
