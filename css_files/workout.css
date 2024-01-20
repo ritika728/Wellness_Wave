@@ -1,0 +1,22 @@
+/* go to top button css */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+/* go to top button css */
