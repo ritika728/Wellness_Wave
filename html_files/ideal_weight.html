@@ -8,24 +8,36 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>WELLNESS WAVE</h1>
+      </header>
+    <div class="navbar">
+        <ul>
+            <li class="navlist"><a href="../index.html" class="home">Home</a></li>
+            <li class="navlist"><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li class="navlist"><a href="wellness.html" class="home">Wellness</a></li>
+            <!-- <li><a href="testimonial.html" class="home">Testimonial</a></li> -->
+            <li class="navlist"><a href="faq.html" class="home">FAQ</a></li>
+        </ul>
+    </div>
     <div id=outer>
-        <div class='ac b'>Ideal Body Weight Calculator</div>
+        <div class="calci_title">Ideal Body Weight Calculator</div>
         <div id=cover><form name=iw>
             <table class=main>
-                <col class=w60>
-                <col class=w40>
-                <tr>
+                <col class=w60 style="text-align: center;">
+                <col class=w40 style="text-align: center;">
+                <tr >
                     <td>Measuring System<td>
-                        <select id=msw onchange=msystem();><option value=metric>Metric (Kgs, Cms)<option value=us>US (lbs, inches)</select>
+                        <select id=msw onchange=msystem();  style="font-size: medium;"><option value=metric>Metric (Kgs, Cms)<option value=us>US (lbs, inches)</select>
                             <tr>
                                 <td>Sex<td>
-                                    <select id=sw><option value=m>Male<option value=f>Female</select>
+                                    <select id=sw style="font-size: medium;"><option value=m>Male<option value=f>Female</select>
+                                
                                         <tr>
-                                            <td>Height <span id=thw>(Cms)</span>
-                                                <td><input id=hw><tr><td><button type=reset>Reset</button>
-                                                    <td><button type=button onclick='bweight();'>Submit</button>
-                                                        <tr><td>As per D R Miller Formula<td><input id=ibw class=op><tr><td>As per WHO recommendations<td><input id=ibw1 class=op><tr><td colspan=2 class='ac b' >This Calculator is suitable only for Adults over 18 years of age.
-
+                                            <td>Height (Cms)</td>
+                                                <td><input id=hw style="font-size:large ;"><tr><td><button type=reset style="size: 50px;height: 50px;width: 80px;">Reset</button>
+                                                    <td><button type=button onclick='bweight();'style="size: 50px;height: 50px;width: 80px;">Submit</button>
+                                                        <tr><td>As per D R Miller Formula<td><input id=ibw class=op style="font-size: large;"><tr><td>As per WHO recommendations<td><input id=ibw1 class=op style="font-size: large;""><tr><td colspan=2 class='ac b' >This Calculator is suitable only for Adults over 18 years of age.
                                                         </table>
                                                     </form>
                                                 </div>
