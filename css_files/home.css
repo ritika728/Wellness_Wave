@@ -274,6 +274,50 @@ p {
   margin: 2px;
 }
 
+.twitter-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.twitter-link i {
+  color: inherit; 
+}
+.twitter-link:hover {
+  color: inherit; 
+}
+
+.e-mail-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.e-mail-link i {
+  color: inherit; 
+}
+.e-mail-link:hover {
+  color: inherit; 
+}
+
+.github-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.github-link i {
+  color: inherit; 
+}
+.github-link:hover {
+  color: inherit; 
+}
+
+.linkedin-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.linkedin-link i {
+  color: inherit; 
+}
+.linkedin-link:hover {
+  color: inherit; 
+}
+
 .a {
   color: white;
   text-decoration: none;
