@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/ideal_weight.css">
+    <link rel="stylesheet" href="../css_files/home.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>WELLNESS WAVE</h1>
+      </header>
+    <div class="navbar">
+        <ul>
+            <li class="navlist"><a href="../index.html" class="home">Home</a></li>
+            <li class="navlist"><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li class="navlist"><a href="wellness.html" class="home">Wellness</a></li>
+            <!-- <li><a href="testimonial.html" class="home">Testimonial</a></li> -->
+            <li class="navlist"><a href="faq.html" class="home">FAQ</a></li>
+        </ul>
+    </div>
+    <div id=outer>
+        <div class="calci_title">Ideal Body Weight Calculator</div>
+        <div id=cover><form name=iw>
+            <table class=main>
+                <col class=w60 style="text-align: center;">
+                <col class=w40 style="text-align: center;">
+                <tr >
+                    <td>Measuring System<td>
+                        <select id=msw onchange=msystem();  style="font-size: medium;"><option value=metric>Metric (Kgs, Cms)<option value=us>US (lbs, inches)</select>
+                            <tr>
+                                <td>Sex<td>
+                                    <select id=sw style="font-size: medium;"><option value=m>Male<option value=f>Female</select>
+                                
+                                        <tr>
+                                            <td>Height (Cms)</td>
+                                                <td><input id=hw style="font-size:large ;"><tr><td><button type=reset style="size: 50px;height: 50px;width: 80px;">Reset</button>
+                                                    <td><button type=button onclick='bweight();'style="size: 50px;height: 50px;width: 80px;">Submit</button>
+                                                        <tr><td>As per D R Miller Formula<td><input id=ibw class=op style="font-size: large;"><tr><td>As per WHO recommendations<td><input id=ibw1 class=op style="font-size: large;""><tr><td colspan=2 class='ac b' >This Calculator is suitable only for Adults over 18 years of age.
+                                                        </table>
+                                                    </form>
+                                                </div>
+                                            </div>
+<script src="../javascript/ideal_weight.js"></script>
+<script src="https://kit.fontawesome.com/9e5d1ce9c2.js" crossorigin="anonymous"></script>
+<footer class="footer">
+        <h2>Wellness Wave</h2>
+        <p>
+            "Sweat Today, Shine Tomorrow. Embrace the Burn, Sculpt the Strength.
+            Your Journey, Your Body, Your Triumph. Elevate your Fitness, Elevate your Life."
+        </p>
+        <h3 class="a"><a class="a" href="../html_files/terms.html" target="_blank">Terms & Conditions </a></h3>
+
+        <h3 class="a"><a class="a" href="../html_files/faq.html" target="_blank">Frequently Asked Questions</a></h3>
+
+   
+        <div class="container2">
+            <i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i>
+            <i class="fa-solid fa-envelope"style="font-size: 1.25em;margin: 2px;"></i>
+            <i class="fa-brands fa-github"style="font-size: 1.25em;margin: 2px;"></i>
+            <i class="fa-brands fa-linkedin"style="font-size: 1.25em;margin: 2px;"></i>
+        </div>
+    <hr width="80%" color="silver">
+    <div class="footer__bar">
+      Copyright © 2024 Wellness Wave . All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
