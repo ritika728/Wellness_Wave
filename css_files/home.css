@@ -130,7 +130,7 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-
+  text-decoration: none;
   transition: box-shadow 0.3s ease;
 }
 
@@ -142,7 +142,6 @@ a:hover {
   background-color: rgba(66, 147, 213, 0.8);
   color: #ecf0f1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-decoration: underline;
 }
 
 .newsletter input {
@@ -328,4 +327,12 @@ p {
 #scrollToTopBtn:hover {
   background-color: rgb(43, 43, 43);
 }
-
+.wit{
+  text-decoration: none;
+  color: #000;
+}
+.wit:hover{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
