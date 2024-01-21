@@ -198,3 +198,108 @@ header {
   /* to Ensure the header is above other elements */
 
 }
+footer {
+  background-color: #00796b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto; /* Set margin-top to auto to push the footer to the bottom */
+  margin-bottom: 0;
+}
+.socials {
+  margin-bottom: 10px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.socials img {
+  width: 30px;
+  /* Adjust the size as needed */
+  height: 30px;
+  /* Adjust the size as needed */
+}
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius:50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: rgb(43, 43, 43);
+}
+.twitter-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.twitter-link i {
+  color: inherit; 
+}
+.twitter-link:hover {
+  color: inherit; 
+}
+
+.e-mail-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.e-mail-link i {
+  color: inherit; 
+}
+.e-mail-link:hover {
+  color: inherit; 
+}
+
+.github-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.github-link i {
+  color: inherit; 
+}
+.github-link:hover {
+  color: inherit; 
+}
+
+.linkedin-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.linkedin-link i {
+  color: inherit; 
+}
+.linkedin-link:hover {
+  color: inherit; 
+}
+.a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 15px;
+  padding: 5px;
+
+}
+.a:hover {
+  color: #00bcd4;
+  background-color: none;
+  text-decoration-color: grey;
+  transition: 0.3s ease-out;
+}
