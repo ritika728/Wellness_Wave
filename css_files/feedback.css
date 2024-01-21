@@ -10,7 +10,7 @@ body{
   height: 100%;
   place-items: center;
   text-align: center;
-  background-image: url("./images/main.jpg");
+  background-image: url("images\ main.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body{
   position: relative;
   width: 400px;
   padding: 20px 30px;
-  border: 1px solid #444;
+  border: 1px solid white;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ body{
 }
 .container .text{
   font-size: 25px;
-  color: #666;
+  color: white;
   font-weight: 500;
 }
 .container .edit{
@@ -62,7 +62,7 @@ body{
 }
 .star-widget label{
   font-size: 40px;
-  color: #444;
+  color: white;
   padding: 10px;
   float: right;
   transition: all 0.2s ease;
@@ -147,4 +147,54 @@ form .btn button{
 }
 form .btn button:hover{
   background: #1b1b1b;
+}
+.navbar {
+  position: fixed !important;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: #00796b;
+  overflow: hidden;
+  z-index: 1000;
+
+}
+.navlist:hover{
+  background-color: #333;
+  opacity: 0.75;
+  border-radius: 1rem;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  width: 100%;
+}
+
+.navbar li {
+  margin: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  display: block;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.5em;
+  font-weight: 900;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 1rem 0;
+  z-index: 1000;
+  /* to Ensure the header is above other elements */
+
 }
