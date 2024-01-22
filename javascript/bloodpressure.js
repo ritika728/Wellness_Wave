@@ -10,7 +10,10 @@ document.getElementById("btnClear").addEventListener("click", clear);
 function calculateBP() {
   const genderValue = gender.value;
   const ageValue = age.value;
-
+  if ( !ageValue || !stolic.value || !diastolic.value) {
+    alert("Please enter valid values for Age, Systolic, and Diastolic Pressure.");
+    return;
+}
   if (stolic.value > 180 || diastolic.value > 120) {
     paint('#BC0000', '#FFFFFF')
     bpCategory.innerHTML = `<p class="output-text text-light">
