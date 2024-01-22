@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+<<<<<<<<< Temporary merge branch 1
+=========
+
+>>>>>>>>> Temporary merge branch 2
 document.addEventListener("DOMContentLoaded", function () {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
   
@@ -55,3 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.scrollTop = 0;
     });
   });
+<<<<<<<<< Temporary merge branch 1
+  
+=========
+  
+>>>>>>>>> Temporary merge branch 2
