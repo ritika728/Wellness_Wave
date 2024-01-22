@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Calculator</title>
+    <link rel="stylesheet" href="../css_files/home.css">
+    <link rel="stylesheet" href="../css_files/calci.css">
+    <link rel="shortcut icon" type="image/jpg" href="../images/wave (1).png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-ezlrJyRBD9N5ZXUUqNl8XqVAjjc6b3lc1ce6Rrp+9/gs6gKDT3Vl+kD5tr5D2Gff" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css_files/bloodpressure.css"> 
+</head>
+<body>
+    <header>
+        <h1>WELLNESS WAVE</h1>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li class="navlist"><a href="../index.html" class="home">Home</a></li>
+            <li class="navlist"><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li class="navlist"><a href="wellness.html" class="home">Wellness</a></li>
+            <!-- <li><a href="testimonial.html" class="home">Testimonial</a></li> -->
+            <li class="navlist"><a href="faq.html" class="home">FAQ</a></li>
+        </ul>
+    </div>
+    <h1 class="calci_title">Blood Pressure Calculator</h1>
+    <div class="out">
+        <div class="calculator">
+            <div class="gender">
+                <label for="gender">Select Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="age">
+                <label for="age">Enter Age:</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+
+            <div class="blood-pressure">
+                <div class="upper">
+                    <label for="stolic">Enter Systolic Pressure:</label>
+                    <input type="number" id="stolic" placeholder="Enter systolic pressure">
+                </div>
+
+                <div class="lower">
+                    <label for="diastolic">Enter Diastolic Pressure:</label>
+                    <input type="number" id="diastolic" placeholder="Enter diastolic pressure">
+                </div>
+
+                <div class="input-btn">
+                    <button id="btnCalc" onclick="calculateBloodPressure()">Calculate</button>
+                    <button id="btnClear" onclick="clearInputs()">Clear</button>
+                </div>
+            </div>
+
+            <div class="output">
+                <div class="empty-output" id="outputTarget"></div>
+            </div>
+        </div>
+    </div>
+  <script src="../javascript/bloodpressure.js"></script> 
+    <script src="https://kit.fontawesome.com/9e5d1ce9c2.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
