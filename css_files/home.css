@@ -267,13 +267,60 @@ p {
   text-align: center;
   color: #00bcd4;
 }
-.container2{
-  display:block;
-  justify-content:space-around;
-  margin: 2px ;
+
+.container2 {
+  display: block;
+  justify-content: space-around;
+  margin: 2px;
 }
-.a{
-  color:white;
+
+<<<<<<<<< Temporary merge branch 1
+.twitter-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.twitter-link i {
+  color: inherit; 
+}
+.twitter-link:hover {
+  color: inherit; 
+}
+
+.e-mail-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.e-mail-link i {
+  color: inherit; 
+}
+.e-mail-link:hover {
+  color: inherit; 
+}
+
+.github-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.github-link i {
+  color: inherit; 
+}
+.github-link:hover {
+  color: inherit; 
+}
+
+.linkedin-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+.linkedin-link i {
+  color: inherit; 
+}
+.linkedin-link:hover {
+  color: inherit; 
+}
+
+.a {
+  color: white;
   text-decoration: none;
 
   font-size: 15px;
@@ -309,3 +356,23 @@ p {
   opacity: 0.75;
   border-radius: 1rem;
 }
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius:50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: rgb(43, 43, 43);
+}
+
