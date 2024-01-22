@@ -5,9 +5,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #00001f;
 }
 
+.out{
+    background-image: url(../images/bmr.png);
+    background-size: contain;
+    height: 1000px;
+    margin-left: 120px;
+}
 .calculator {
     background-color: #fff;
     padding: 20px;
