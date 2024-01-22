@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,33 +28,33 @@
     <h1 class="calci_title">Blood Pressure Calculator</h1>
     <div class="out">
         <div class="calculator">
-            <div class="gender">
-                <label for="gender">Select Gender:</label>
-                <select name="gender" id="gender">
+            <div class="gender_box">
+                <label for="gender">Gender :</label>
+                <select id="gender" name="gender" required>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
             </div>
 
             <div class="age">
-                <label for="age">Enter Age:</label>
+                <label for="age">Age (years):</label>
                 <input type="number" id="age" placeholder="Enter your age">
             </div>
 
             <div class="blood-pressure">
                 <div class="upper">
-                    <label for="stolic">Enter Systolic Pressure:</label>
+                    <label for="stolic">Systolic Pressure (mmHg):</label>
                     <input type="number" id="stolic" placeholder="Enter systolic pressure">
                 </div>
 
                 <div class="lower">
-                    <label for="diastolic">Enter Diastolic Pressure:</label>
+                    <label for="diastolic">Diastolic Pressure (mmHg)</label>
                     <input type="number" id="diastolic" placeholder="Enter diastolic pressure">
                 </div>
 
                 <div class="input-btn">
-                    <button id="btnCalc" onclick="calculateBloodPressure()">Calculate</button>
-                    <button id="btnClear" onclick="clearInputs()">Clear</button>
+                    <button id="btnCalc" onclick="calculateBP()">Calculate</button>
+                    <button id="btnClear" onclick="clear()">Clear</button>
                 </div>
             </div>
 
@@ -64,7 +65,32 @@
     </div>
   <script src="../javascript/bloodpressure.js"></script> 
     <script src="https://kit.fontawesome.com/9e5d1ce9c2.js" crossorigin="anonymous"></script>
+    <footer class="footer">
+        <h2>Wellness Wave</h2>
+        <p>
+            "Sweat Today, Shine Tomorrow. Embrace the Burn, Sculpt the Strength.
+            Your Journey, Your Body, Your Triumph. Elevate your Fitness, Elevate your Life."
+        </p>
+        <h3 class="a"><a class="a" href="../html_files/terms.html" target="_blank">Terms & Conditions </a></h3>
+
+        <h3 class="a"><a class="a" href="../html_files/faq.html" target="_blank">Frequently Asked Questions</a></h3>
+
+   
+        <div class="container2">
+            <a href="https://twitter.com/ritikatwts" target="_blank" rel="noopener noreferrer" class="twitter-link">
+                <i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i></a>
+                <a href="mailto:ritikamalik100102@gmail.com" class="e-mail-link">
+                <i class="fa-solid fa-envelope"style="font-size: 1.25em;margin: 2px;"></i></a>
+                <a href="https://github.com/ritika728" target="_blank" rel="noopener noreferrer" class="github-link">
+                <i class="fa-brands fa-github"style="font-size: 1.25em;margin: 2px;"></i></a>
+                <a href="https://www.linkedin.com/in/ritika-malik-must/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                <i class="fa-brands fa-linkedin"style="font-size: 1.25em;margin: 2px;"></i></a>
+        </div>
+    <hr width="80%" color="silver">
+    <div class="footer__bar">
+      Copyright © 2024 Wellness Wave . All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
-
 
