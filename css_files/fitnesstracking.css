@@ -35,6 +35,7 @@
 } /*removes underline that comes with href*/
 .container_box {
     text-decoration: none;
+    height: 300px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     background-color: #ecf0f1;
