@@ -1,206 +1,33 @@
-* {
-    box-sizing: border-box;
-  }
+body{
+  background-image: url(../images/blood_pressure.png);
+  background-size: cover;
   
-  header h1 {
-    margin-top: 10px;
-    color:white; 
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    /* margin-bottom: 40px; */
-    background-color: aqua;
-
-  }
- 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+}
+.calculator{
+ background-color: transparent;
+ font-weight: bold;
+ box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+ width: 70%; 
+ margin: auto;
+ padding: 20px;
+ box-sizing: border-box;
+}
+.out{
+padding-left: 100px;
+padding-right: 10px;
 
 }
-  .container {
-    background-color:#a5dff6;
-    padding: 1px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 1000px;
-    margin: 10px;
-  }
-  
-  header,
-  footer {
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 8px;
-  }
-  
-  main {
-    background-color: #6f6f6f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .directions {
-    font-family: "JetBrains Mono", monospace;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .inputs {
-    display: flex;
-    flex-direction: column;
-    background-color: #7fe5e5;
-    padding: 25px; 
-    align-items: center;
-    border-radius: 10px;
-    width: 80%; 
-    max-width: 600px; 
-  }
-  
-  .gender,
-  .age {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
-  }
-  
-  select,
-  input {
-    width: 100%;
-    height: 40px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    margin: 10px 0;
-  }
-
-  
-  .button-container {
-    display: flex;
-    width: 90%;
-    max-width: 300px;
-    justify-content: space-between;
-    margin-top: 30px; 
-    margin-bottom: 20px;
-  }
-  
-  button {
-    width: 48%;
-    height: 50px;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: "Gruppo", cursive;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    font-size: 28px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    color: #000000;
-    background-color: #ffffff;
-  }
-  
-  .output {
-    width: 100%;
-  }
-  
-  .empty-output {
-    width: 100%;
-    max-width: 300px;
-    height: 205px;
-    border: 1px solid #a10b0b;
-    border-radius: 10px;
-    margin: 12px auto;
-    padding: 5px;
-  }
-  
-  .output-text {
-    text-align: center;
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .text-dark {
-    color: #000000;
-  }
-  
-  
-  .blood-pressure {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px; 
-  }
-  
-  .bp-heading {
-    text-align: center;
-  }
-  
-  
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #000000;
-    font-family: 'JetBrains Mono', monospace;
-    padding-top: 10px;
-    border-top: 2px solid #6f6f6f;
-    margin-top: 20px;
-  }
-  
-  footer > p {
-    margin: 0;
-  }
-  @media (max-width: 768px) {
-    .container {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .inputs {
-      width: 100%;
-      max-width: none;
-    }
-  }
-
-  .input-btn {
-    display: flex;
-    width: 100%;
-    max-width: 300px;
-    justify-content: space-around; 
-    margin-top: 10px;
-  }
-
-
-.out {
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-around;
-  width: 100%;
+.output{
+  padding-top: 10px;
+}
+.gender_box, .age, .blood-pressure {
+  margin-bottom: 20px; 
 }
 
-.calculator {
- background-color: aqua;
- padding: 20px; 
-    border-radius: 10px;
+.input-btn {
+  text-align: center; 
 }
 
-.footer {
- 
-  width: 100%;
-  text-align: center;
-}
-
-  .calci_title {
-    margin-top: 150px;
-    font-size: 3em;
-    color: black;
-    text-align: center;
-    margin-bottom: -130px;
+#outputTarget {
+  padding: 20px; 
 }
