@@ -35,8 +35,10 @@ header {
   background-color: #00796b;
   overflow: hidden;
   z-index: 1000;
+  z-index: 1000;
 
 }
+
 
 .container {
   max-width: 800px;
@@ -60,9 +62,11 @@ section p {
   line-height: 1.6;
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 a:hover {
   text-decoration: underline;
@@ -125,7 +129,7 @@ a:hover {
 
 .box {
   background-color: #ecf0f1;
-  padding: 10px 22px 10px 22px;
+  padding:10px 22px 10px 22px;
   margin: 10px 0px 0px 0px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -137,7 +141,6 @@ a:hover {
 .box h3 {
   font-size: 17px;
 }
-
 .box:hover {
   background-color: rgba(66, 147, 213, 0.8);
   color: #ecf0f1;
@@ -216,10 +219,8 @@ footer {
 }
 
 .socials img {
-  width: 30px;
-  /* Adjust the size as needed */
-  height: 30px;
-  /* Adjust the size as needed */
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
 }
 
 p {
@@ -258,11 +259,10 @@ p {
 
 .right .form-control {
   width: 100%;
-  max-width: 600px;
-  /* Adjust the maximum width as needed */
+  max-width: 600px; /* Adjust the maximum width as needed */
 }
 
-.footer h2 {
+.footer h2{
   text-align: center;
   color: #00bcd4;
 }
@@ -328,6 +328,8 @@ p {
 
 .a:hover {
   color: #00bcd4;
+  background-color: none;
+  text-decoration-color: grey;
   background-color: none;
   text-decoration-color: grey;
   transition: 0.3s ease-out;
