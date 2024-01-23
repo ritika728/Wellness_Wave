@@ -7,6 +7,7 @@
     <meta name="robots" content="index" />
     <title>All Calculators</title>
 
+    <link rel="stylesheet" href="../css_files/hambg.css">
     <link rel="stylesheet" href="../css_files/home.css">
     <link rel="stylesheet" href="../css_files/fitnesstracking.css">
     <link rel="shortcut icon" type="image/jpg" href="../images/wave (1).png"/>
@@ -16,9 +17,9 @@
 
 <body style="background-image: url('../images/main.jpg');">
     <header>
-        <h1>HEALTH CALCULATORS</h1>
+        <h3>HEALTH CALCULATOR</h3>
     </header>
-    <div class="navbar">
+    <div class="navbar" id="navbar_home">
         <ul>
             <li class="navlist"><a href="../index.html" class="home">Home</a></li>
             <li class="navlist"><a href="./fitnesstracking.html" class="home">Tracking</a></li>
@@ -28,6 +29,23 @@
             <li class="navlist"><a href="./faq.html" class="home">FAQ</a></li>
         </ul>
     </div>
+
+    <!--hamburger menu-->
+    <div class="navbar" id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../index.html"onclick="toggleMenu()">Home</a></li>
+                <li><a href="../html_files/fitnesstracking.html"onclick="toggleMenu()">Tracking</a></li>
+                <li><a href="../html_files/wellness.html"onclick="toggleMenu()">Wellness</a></li>
+                <li><a href="../html_files/faq.html" onclick="toggleMenu()">FAQ</a></li>
+            </div>
+        </div>
+    </div> 
 
     <section class="types">
         <div class="boxs">
@@ -120,6 +138,7 @@
 
       <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
 
+      <script src="../javascript/hambg.js"></script>
       <script src="../javascript/index.js"></script>
 </body>
 
