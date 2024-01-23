@@ -1,78 +1,126 @@
-.types {
-    /* text-align: center; */
-    max-width: 1300px;
-    margin: 20px auto;
-    margin-top: 17%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.boxs {
+section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    align-items: center;
+    /* background: #16384c; */
+    opacity: 0.95;
 }
 
-.calci {
+.container {
+    position: relative;
+    width: 1100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 30px;
 }
 
-.category {
-    text-decoration: none;
-    color: #333;
-    flex: 0 0 30%; /* Adjust the width based on your preference */
-    margin: 15px;
-}
-.category:hover, .category:active, .category:visited {
-    text-decoration: none;
-} /*removes underline that comes with href*/
-.container_box {
-    text-decoration: none;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #ecf0f1;
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 250px;
+    /* background: #fff; */
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
 }
 
-.container_box h4 {
-    color: #3498db;
-}
-.gradient-hover {
-  background: linear-gradient(to right, #f5f5f5, #e5e5e5, #d5d5d5);
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #000;
-  transition: background-position 0.3s ease;
+.container .card:hover {
+    height: 480px;
 }
 
-.gradient-hover:hover {
-  background: linear-gradient(to right, #e5e5e5, #d5d5d5, #c5c5c5);
+.container .card .imgbx {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 4px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-.health_title {
-    color: #3498db;
+.container .card .imgbx img {
+    max-width: 100%;
+    border-radius: 4px;
+    height: 200px;
+    width: 270px;
 }
 
-@media (max-width: 768px) {
-    .category {
-        flex: 0 0 100%; /* Full width on smaller screens */
-    }
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
-.navlist:hover{
-    background-color: #333;
-    opacity: 0.75;
-    border-radius: 1rem;
-  }
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.container .card a button {
+    margin-bottom: 15px;
+    font-size: 17px;
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform, opacity;
+    z-index: 0;
+
+}
+
+.container .card a button:hover {
+    background: #F6F9FE;
+    color: #065be3;
+}
+
+.container .card a button:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.container .card a button:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
