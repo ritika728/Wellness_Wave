@@ -12,6 +12,8 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,12 +21,17 @@ header {
   text-align: center;
   letter-spacing: 0.5em;
   font-weight: 900;
-  background-color: #00bcd4;
+  /* background-color: #00bcd4; */
+  background-color: var(--background-color1);
   color: #fff;
   padding: 1rem 0;
   z-index: 1000;
   /* to Ensure the header is above other elements */
 
+}
+header h1{
+  text-align: center;
+  /* margin-left: 380px; */
 }
 
 .navbar {
@@ -32,7 +39,8 @@ header {
   top: 80px;
   left: 0;
   width: 100%;
-  background-color: #00796b;
+  /* background-color: #00796b; */
+  background-color: var(--background-color2);
   overflow: hidden;
   z-index: 1000;
   z-index: 1000;
@@ -109,7 +117,8 @@ a:hover {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--background-color3);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -194,7 +203,8 @@ a:hover {
 }
 
 footer {
-  background-color: #00796b;
+  /* background-color: #00796b; */
+  background-color: var(--background-color2);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -225,6 +235,7 @@ footer {
 
 p {
   margin: 0;
+  color: var(--primary-color1);
 }
 
 #notification {
@@ -410,4 +421,29 @@ body:hover {
   scrollbar-color: #008000 #CCFFCC; 
 
 }
+}
+
+#icon {
+  width: 45px;
+  height: 40px;
+  /* margin-left: 346px; */
+  cursor: pointer;
+}
+
+#icon:hover {
+  transform: scale(1.1);
+}
+:root{
+  --background-color1:#00bcd4;
+  --background-color2:#00796b;
+  --background-color3:#fff;
+  --primary-color1:#333;
+
+}
+.dark-theme{
+  --background-color1:#022429;
+  --background-color2:#01413a;
+  --background-color3:#000;
+  --primary-color1:#fff;
+
 }
