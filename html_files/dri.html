@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css_files/home.css">
+    <link rel="stylesheet" href="../css_files/dri.css">
+    <title>DRI Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>WELLNESS HUB</h1>
+    </header>
+
+    <div class="navbar">
+        <ul>
+            <li class="navlist"><a href="../index.html" class="home">Home</a></li>
+            <li class="navlist"><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li class="navlist"><a href="wellness.html" class="home">Wellness</a></li>
+            <!-- <li><a href="testimonial.html" class="home">Testimonial</a></li> -->
+            <li class="navlist"><a href="faq.html" class="home">FAQ</a></li>
+        </ul>
+    </div>
+    <h1>DRI Calculator</h1>
+    <form id="driForm">
+        <label for="age">Age (years):</label>
+        <input type="number" id="age" required>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="activityLevel">Activity Level:</label>
+        <select id="activityLevel" required>
+            <option value="sedentary">Sedentary</option>
+            <option value="lightlyActive">Lightly Active</option>
+            <option value="moderatelyActive">Moderately Active</option>
+            <option value="veryActive">Very Active</option>
+            <option value="extraActive">Extra Active</option>
+        </select>
+
+        <button type="button" onclick="calculateDRI()">Calculate DRI</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="../javascript/dri.js"></script>
+</body>
+</html>
+
+        

@@ -1,0 +1,40 @@
+body {
+    background-image: url(../images/dri.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: white;
+}
+
+#driForm {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#driForm label, #driForm input, #driForm select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#driForm button {
+    display: block;
+    background-color: #2aafd8;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#result {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
