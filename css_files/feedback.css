@@ -154,7 +154,7 @@ form .btn button:hover{
   left: 0;
   width: 100%;
   background-color: #00796b;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1000;
 
 }
@@ -303,3 +303,13 @@ footer {
   text-decoration-color: grey;
   transition: 0.3s ease-out;
 }
+.menu-links a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+} 
