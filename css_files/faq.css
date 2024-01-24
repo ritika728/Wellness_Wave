@@ -3,7 +3,8 @@
   margin: 20px auto;
   margin-top: 17%;
   padding: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--background-color15);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -15,7 +16,8 @@
 #faq-container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: var(--background-color16);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -179,3 +181,12 @@
 }
 
 /* Testimonials end here */    
+
+:root{
+  --background-color15:#fff;
+  --background-color16:#fff;
+}
+.dark-theme{
+  --background-color15:#000;
+  --background-color16:#1b1a1a;
+}

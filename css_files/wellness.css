@@ -13,6 +13,8 @@ section {
 }
 
 .container {
+    /* background-color: #fff; */
+    background-color: var(--background-color13);
     position: relative;
     width: 1100px;
     display: flex;
@@ -23,6 +25,9 @@ section {
 }
 
 .container .card {
+    /* background-color: #fff; */
+    background-color: var(--background-color14);
+    
     position: relative;
     max-width: 300px;
     height: 250px;
@@ -123,4 +128,13 @@ section {
 .container .card a button:focus {
     outline: none;
     border: 2px solid #4285f4;
+}
+
+:root{
+    --background-color13:#fff;
+    --background-color14:#fff;
+}
+.dark-theme{
+    --background-color13:#000;
+    --background-color14:rgb(83, 82, 82);
 }

@@ -27,6 +27,8 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /* background-color: transparent; */
+  background-color: var(--background-color19);
 }
 .container .post{
   display: none;
@@ -153,7 +155,8 @@ form .btn button:hover{
   top: 80px;
   left: 0;
   width: 100%;
-  background-color: #00796b;
+  /* background-color: #00796b; */
+  background-color: var(--background-color18);
   overflow: hidden;
   z-index: 1000;
 
@@ -184,6 +187,10 @@ form .btn button:hover{
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -191,15 +198,22 @@ header {
   text-align: center;
   letter-spacing: 0.5em;
   font-weight: 900;
-  background-color: #00bcd4;
+  /* background-color: #00bcd4; */
+  background-color: var(--background-color17);
   color: #fff;
   padding: 1rem 0;
   z-index: 1000;
   /* to Ensure the header is above other elements */
 
 }
+header h1{
+  text-align: center;
+  margin: auto;
+  margin-left: 440px;
+}
 footer {
-  background-color: #00796b;
+  /* background-color: #00796b; */
+  background-color: var(--background-color18);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -302,4 +316,23 @@ footer {
   background-color: none;
   text-decoration-color: grey;
   transition: 0.3s ease-out;
+}
+
+#icon{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+#icon:hover{
+  transform: scale(1.1);
+}
+:root{
+  --background-color17:#00bcd4;
+  --background-color18:#00796b;
+  --background-color19:transparent;
+}
+.dark-theme{
+  --background-color17:#02262b;
+  --background-color18:#02433d;
+  --background-color19:#000;
 }
