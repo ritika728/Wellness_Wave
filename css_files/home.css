@@ -33,10 +33,9 @@ header {
   left: 0;
   width: 100%;
   background-color: #00796b;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1000;
   z-index: 1000;
-
 }
 
 
