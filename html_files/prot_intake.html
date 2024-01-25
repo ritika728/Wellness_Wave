@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/home.css">
+    <link rel="stylesheet" href="../css_files/prot.css">
+    <title>Protein Intake Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>WELLNESS WAVE</h1>
+      </header>
+    <div class="navbar">
+        <ul>
+            <li class="navlist"><a href="../index.html" class="home">Home</a></li>
+            <li class="navlist"><a href="fitnesstracking.html" class="home">Tracking</a></li>
+            <li class="navlist"><a href="wellness.html" class="home">Wellness</a></li>
+            <!-- <li><a href="testimonial.html" class="home">Testimonial</a></li> -->
+            <li class="navlist"><a href="faq.html" class="home">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="prot">
+    <h1 style="text-align: center;">Protein Intake Calculator</h1>
+    <div class="calculator">
+    <label for="weight">Enter your weight (in kg):</label>
+    <input type="number" id="weight" placeholder="Enter your weight" required>
+
+    <label for="activity">Select your activity level:</label>
+    <select id="activity" required>
+        <option value="sedentary">Sedentary (little or no exercise)</option>
+        <option value="lightlyActive">Lightly active (light exercise/sports 1-3 days/week)</option>
+        <option value="moderatelyActive">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+        <option value="veryActive">Very active (hard exercise/sports 6-7 days a week)</option>
+        <option value="superActive">Super active (very hard exercise/sports & physical job or 2x training)</option>
+    </select>
+
+    <button onclick="calculateProtein()">Calculate Protein Intake</button>
+
+    <h2 style="text-align: center;">Your Recommended Protein Intake:</h2>
+    <p id="result" style="text-align: center;font-size: 25px; padding-bottom: 10px;">-</p></div></div>
+
+    <script>
+        function calculateProtein() {
+            var weight = parseFloat(document.getElementById('weight').value);
+            var activity = document.getElementById('activity').value;
+
+            // Protein intake formula (in grams)
+            var proteinIntake;
+
+            switch (activity) {
+                case 'sedentary':
+                    proteinIntake = weight * 0.8;
+                    break;
+                case 'lightlyActive':
+                    proteinIntake = weight * 1.0;
+                    break;
+                case 'moderatelyActive':
+                    proteinIntake = weight * 1.2;
+                    break;
+                case 'veryActive':
+                    proteinIntake = weight * 1.4;
+                    break;
+                case 'superActive':
+                    proteinIntake = weight * 1.6;
+                    break;
+                default:
+                    proteinIntake = 0;
+            }
+
+            document.getElementById('result').innerText = proteinIntake.toFixed(2) + " grams per day";
+        }
+    </script>
+
+</body>
+</html>
+    <footer class="footer">
+        <h2>Wellness Wave</h2>
+        <p>
+            "Sweat Today, Shine Tomorrow. Embrace the Burn, Sculpt the Strength.
+            Your Journey, Your Body, Your Triumph. Elevate your Fitness, Elevate your Life."
+        </p>
+        <h3 class="a"><a class="a" href="../html_files/terms.html" target="_blank">Terms & Conditions </a></h3>
+
+        <h3 class="a"><a class="a" href="../html_files/faq.html" target="_blank">Frequently Asked Questions</a></h3>
+
+   
+        <div class="container2">
+            <i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i>
+            <i class="fa-solid fa-envelope"style="font-size: 1.25em;margin: 2px;"></i>
+            <i class="fa-brands fa-github"style="font-size: 1.25em;margin: 2px;"></i>
+            <i class="fa-brands fa-linkedin"style="font-size: 1.25em;margin: 2px;"></i>
+        </div>
+    <hr width="80%" color="silver">
+    <div class="footer__bar">
+      Copyright © 2024 Wellness Wave . All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

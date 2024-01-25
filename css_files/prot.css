@@ -1,0 +1,46 @@
+label{
+    display:block;
+    font-size: larger;
+    text-align:center;
+}
+input {
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+    margin-left: 250px;
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+select{
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 250px;
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+button {
+    display:flex;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 570px;
+  }
+  
+  button:hover {
+    background-color: #2c3e50;
+  }
+body{
+  background-image:url(../images/what-is-protein-fed94e49e3144aba84c815ed3623a51c.jpg);
+}
+.prot{
+  box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
