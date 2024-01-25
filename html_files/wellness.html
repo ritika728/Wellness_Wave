@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellness Hub</title>
+
+    <link rel="stylesheet" href="../css_files/hambg.css">
     <link rel="stylesheet" href="../css_files/home.css">
     <link rel="stylesheet" href="../css_files/wellness.css">
     <link rel="shortcut icon" type="image/jpg" href="../images/wave (1).png" />
@@ -12,11 +14,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha384-ezlrJyRBD9N5ZXUUqNl8XqVAjjc6b3lc1ce6Rrp+9/gs6gKDT3Vl+kD5tr5D2Gff" crossorigin="anonymous">
-
   </head>
-
 <body style="background-image: url('../images/main.jpg');">
-
     <header>
         <h1>Wellness Hub</h1>
         <div class="dark-theme">
@@ -24,16 +23,37 @@
           </div>
           <script src="toggle.js"></script>
     </header>
-
-    <div class="navbar" id="navbar_wellness">
+  
+  
+      <div class="navbar" id="navbar_home">
         <ul>
             <li class="navlist"><a href="../index.html" class="home">Home</a></li>
-            <li class="navlist"><a href="fitnesstracking.html" class="home">Tracking</a></li>
-            <li class="navlist"><a href="wellness.html" class="home">Wellness</a></li>
+            <li class="navlist"><a href="./fitnesstracking.html" class="home">Tracking</a></li>
+            <li class="navlist"><a href="./wellness.html" class="home">Wellness</a></li>
             <!-- <li><a href="#whats-in-it" class="home">Testimonial</a></li> -->
-            <li class="navlist"><a href="faq.html" class="home">FAQ</a></li>
+            <li class="navlist"><a href="./feedback.html" class="home">Rate Us</a></li>
+            <li class="navlist"><a href="./faq.html" class="home">FAQ</a></li>
         </ul>
-    </div>
+     </div>
+  
+  <!--hamburger menu-->
+    <div class="navbar" id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../index.html"onclick="toggleMenu()">Home</a></li>
+                <li><a href="../html_files/fitnesstracking.html"onclick="toggleMenu()">Tracking</a></li>
+                <li><a href="../html_files/wellness.html"onclick="toggleMenu()">Wellness</a></li>
+                <li class="navlist"><a href="../html_files/feedback.html" class="home">Rate Us</a></li>
+                <li><a href="../html_files/faq.html" onclick="toggleMenu()">FAQ</a></li>
+            </div>
+        </div>
+    </div> 
+
 
     <section>
         <div class="container">
@@ -153,8 +173,8 @@
 
     <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-    <script src="../javascript/index.js"></script>
-
+      <script src="../javascript/hambg.js"></script>
+      <script src="../javascript/index.js"></script>
 </body>
 
 </html>

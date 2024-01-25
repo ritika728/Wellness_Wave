@@ -181,7 +181,7 @@
 }
 
 /* Testimonials end here */    
-
+ toggle
 :root{
   --background-color15:#fff;
   --background-color16:#fff;
@@ -190,3 +190,15 @@
   --background-color15:#000;
   --background-color16:#1b1a1a;
 }
+=======
+.menu-links a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+} 
+ main

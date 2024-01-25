@@ -155,9 +155,14 @@ form .btn button:hover{
   top: 80px;
   left: 0;
   width: 100%;
+toggle
   /* background-color: #00796b; */
   background-color: var(--background-color18);
   overflow: hidden;
+
+  background-color: #00796b;
+  overflow: visible;
+ main
   z-index: 1000;
 
 }
@@ -317,6 +322,7 @@ footer {
   text-decoration-color: grey;
   transition: 0.3s ease-out;
 }
+toggle
 
 #icon{
   height: 40px;
@@ -336,3 +342,14 @@ footer {
   --background-color18:#02433d;
   --background-color19:#000;
 }
+.menu-links a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+} 
+ main

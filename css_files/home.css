@@ -43,12 +43,16 @@ header h1{
   top: 80px;
   left: 0;
   width: 100%;
+ toggle
   /* background-color: #00796b; */
   background-color: var(--background-color2);
   overflow: hidden;
-  z-index: 1000;
-  z-index: 1000;
 
+  background-color: #00796b;
+  overflow: visible;
+ main
+  z-index: 1000;
+  z-index: 1000;
 }
 
 

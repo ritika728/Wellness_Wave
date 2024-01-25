@@ -86,6 +86,7 @@
     border-radius: 1rem;
   }
 
+toggle
 :root{
     --background-color5:#fff;
     --background-color6:#f5f5f5;
@@ -112,4 +113,14 @@
 }
 header h1{
    
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    main
 }

@@ -129,6 +129,7 @@ section {
     outline: none;
     border: 2px solid #4285f4;
 }
+ toggle
 
 :root{
     --background-color13:#fff;
@@ -137,4 +138,15 @@ section {
 .dark-theme{
     --background-color13:#000;
     --background-color14:rgb(83, 82, 82);
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+ main
 }
