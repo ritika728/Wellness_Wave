@@ -3,6 +3,7 @@ body {
   margin: 80px;
   padding: 0;
   color: #333;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,6 +23,7 @@ header {
   background-color: #00bcd4;
   color: #fff;
   padding: 1rem 0;
+
   z-index: 1000;
   /* to Ensure the header is above other elements */
 
@@ -195,12 +197,14 @@ a:hover {
 footer {
   background-color: #00796b;
   color: #fff;
+  height: 28vh;
   padding: 20px;
   text-align: center;
   /* position:relative; */
-  bottom: 0 !important;
   width: 100%;
-  margin-top: 8%;
+  font-size: 14px !important;
+  
+  bottom: 0 !important;
 }
 
 .socials {
