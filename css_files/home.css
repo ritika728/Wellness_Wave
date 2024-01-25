@@ -197,14 +197,11 @@ a:hover {
 footer {
   background-color: #00796b;
   color: #fff;
-  height: 28vh;
   padding: 20px;
   text-align: center;
-  /* position:relative; */
   width: 100%;
-  font-size: 14px !important;
-  
   bottom: 0 !important;
+  margin-top: 8%;
 }
 
 .socials {
