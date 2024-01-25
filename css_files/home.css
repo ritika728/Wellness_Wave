@@ -414,7 +414,7 @@ p {
 .wit:hover{
   color: #fff;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.5s;}
 /* Custom scrollbar for WebKit browsers */
 body::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
