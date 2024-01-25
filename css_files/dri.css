@@ -1,0 +1,56 @@
+body {
+    background-image: url(../images/dri.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#driForm {
+    background-color: transparent;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    padding-left: 40px;
+     padding-right: 20px;
+     margin-top: 200px;
+     margin-left: 500px;
+     margin-right: 500px;
+     margin-bottom: 50px;
+    border-radius: 8px;
+    padding-top: 10px;
+     padding-bottom: 10px;
+}
+
+#driForm h1 {
+    color: white;
+    text-align: center;
+}
+
+#driForm label,
+#driForm input,
+#driForm select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+#result {
+    background-color: transparent;
+    font-weight: bold;
+
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    padding-left: 40px;
+     padding-right: 20px;
+     margin-left: 500px;
+     margin-right: 500px;
+     margin-bottom: 50px;
+    border-radius: 8px;
+    padding-top: 10px;
+     padding-bottom: 10px;
+}
+#result p,h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}

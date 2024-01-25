@@ -17,6 +17,12 @@ body{
     
 }
 
+.out{
+  height: 65vh;
+  margin-top: 0px !important;
+  margin-top: -20px;
+}
+
 .calculator{
    background-color: black;
    font-weight: bold;
@@ -63,4 +69,9 @@ body{
     background-color: blue;
     color: white;
     
+  }
+
+  .calci_title{
+    margin-top: 200px;
+    margin-bottom: ;
   }
