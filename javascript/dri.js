@@ -1,4 +1,12 @@
+function isNumeric(value) {
+    return !isNaN(parseFloat(value)) && isFinite(value);
+}
+
 function calculateBMR(weight, height, age, gender) {
+    if (!isNumeric(weight) || !isNumeric(height) || !isNumeric(age)) {
+        throw new Error("Please enter valid numeric values for weight, height, and age.");
+    }
+
     if (gender.toLowerCase() === 'male') {
         return 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
     } else if (gender.toLowerCase() === 'female') {
@@ -11,25 +19,38 @@ function calculateBMR(weight, height, age, gender) {
 function calculateTDEE(bmr, activityLevel) {
     const activityMultipliers = {
         'sedentary': 1.2,
-        'lightlyActive': 1.375,
-        'moderatelyActive': 1.55,
-        'veryActive': 1.725,
-        'extraActive': 1.9
+        'lightlyactive': 1.375,
+        'moderatelyactive': 1.55,
+        'veryactive': 1.725,
+        'extraactive': 1.9
     };
 
-    if (!(activityLevel.toLowerCase() in activityMultipliers)) {
+    const normalizedActivityLevel = activityLevel.toLowerCase();
+
+    if (!(normalizedActivityLevel in activityMultipliers)) {
         throw new Error("Invalid activity level. Choose from: sedentary, lightlyActive, moderatelyActive, veryActive, extraActive.");
     }
 
-    return bmr * activityMultipliers[activityLevel.toLowerCase()];
+    return bmr * activityMultipliers[activityLevel];
 }
 
 function calculateDRI() {
-    const age = parseInt(document.getElementById('age').value);
-    const weight = parseFloat(document.getElementById('weight').value);
-    const height = parseFloat(document.getElementById('height').value);
-    const gender = document.getElementById('gender').value;
-    const activityLevel = document.getElementById('activityLevel').value;
+    const ageInput = document.getElementById('age');
+    const weightInput = document.getElementById('weight');
+    const heightInput = document.getElementById('height');
+    const genderSelect = document.getElementById('gender');
+    const activityLevelSelect = document.getElementById('activityLevel');
+
+    const age = parseInt(ageInput.value);
+    const weight = parseFloat(weightInput.value);
+    const height = parseFloat(heightInput.value);
+    const gender = genderSelect.value;
+    const activityLevel = activityLevelSelect.value;
+
+    if (!isNumeric(age) || !isNumeric(weight) || !isNumeric(height) || gender.trim() === '' || activityLevel.trim() === '') {
+        alert("Please enter valid values for all fields.");
+        return;
+    }
 
     try {
         const bmr = calculateBMR(weight, height, age, gender);
