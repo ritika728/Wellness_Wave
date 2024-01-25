@@ -1,0 +1,159 @@
+label{
+    display:block;
+    font-size: larger;
+    text-align:center;
+}
+input {
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+    margin-left: 450px;
+    width: 40%;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+select{
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 450px;
+    width: 40%;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+button {
+    display:flex;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 650px;
+  }
+  
+  button:hover {
+    background-color: #2c3e50;
+  }
+body{
+  background-image:url(../images/wellness-images/image.jpg);
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.prot{
+  box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.5);
+  padding-top: 140px;
+}
+.footer h2{
+  text-align: center;
+  color: #00bcd4;
+}
+
+.container2 {
+  display: block;
+  justify-content: space-around;
+  margin: 2px;
+}
+
+/*adding icon hover glow */
+.twitter-link {
+  transition: .5s;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.twitter-link i {
+  color: inherit; 
+}
+
+.twitter-link :hover::before {
+  transform: scale(1.1);
+}
+
+.twitter-link:hover {
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
+.e-mail-link {
+  transition: .5s;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.e-mail-link i {
+  color: inherit; 
+}
+
+.e-mail-link :hover::before {
+  transform: scale(1.1);
+}
+
+.e-mail-link:hover {
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
+.github-link {
+  transition: .5s;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.github-link i {
+  color: inherit; 
+}
+
+.github-link :hover::before {
+  transform: scale(1.1);
+}
+
+.github-link:hover {
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
+.linkedin-link {
+  transition: .5s;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.linkedin-link i {
+  color: inherit; 
+}
+
+.linkedin-link :hover::before {
+  transform: scale(1.1);
+}
+
+.linkedin-link:hover {
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
+/*adding hover link end*/
+
+.a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 15px;
+  padding: 5px;
+}
+footer {
+  background-color: #00796b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  /* position:relative; */
+  bottom: 0 !important;
+  width: 100%;
+  margin-top: 8%;
+}
