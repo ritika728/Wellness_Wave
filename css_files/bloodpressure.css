@@ -1,0 +1,33 @@
+body{
+  background-image: url(../images/blood_pressure.png);
+  background-size: cover;
+  
+}
+.calculator{
+ background-color: transparent;
+ font-weight: bold;
+ box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+ width: 70%; 
+ margin: auto;
+ padding: 20px;
+ box-sizing: border-box;
+}
+.out{
+padding-left: 100px;
+padding-right: 10px;
+
+}
+.output{
+  padding-top: 10px;
+}
+.gender_box, .age, .blood-pressure {
+  margin-bottom: 20px; 
+}
+
+.input-btn {
+  text-align: center; 
+}
+
+#outputTarget {
+  padding: 20px; 
+}

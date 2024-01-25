@@ -33,10 +33,11 @@ header {
   left: 0;
   width: 100%;
   background-color: #00796b;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1000;
-
+  z-index: 1000;
 }
+
 
 .container {
   max-width: 800px;
@@ -60,9 +61,11 @@ section p {
   line-height: 1.6;
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 a:hover {
   text-decoration: underline;
@@ -125,24 +128,22 @@ a:hover {
 
 .box {
   background-color: #ecf0f1;
-  padding: 10px 22px 10px 22px;
+  padding:10px 22px 10px 22px;
   margin: 10px 0px 0px 0px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-
+  text-decoration: none;
   transition: box-shadow 0.3s ease;
 }
 
 .box h3 {
   font-size: 17px;
 }
-
 .box:hover {
   background-color: rgba(66, 147, 213, 0.8);
   color: #ecf0f1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-decoration: underline;
 }
 
 .newsletter input {
@@ -217,10 +218,8 @@ footer {
 }
 
 .socials img {
-  width: 30px;
-  /* Adjust the size as needed */
-  height: 30px;
-  /* Adjust the size as needed */
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
 }
 
 p {
@@ -259,11 +258,10 @@ p {
 
 .right .form-control {
   width: 100%;
-  max-width: 600px;
-  /* Adjust the maximum width as needed */
+  max-width: 600px; /* Adjust the maximum width as needed */
 }
 
-.footer h2 {
+.footer h2{
   text-align: center;
   color: #00bcd4;
 }
@@ -274,49 +272,84 @@ p {
   margin: 2px;
 }
 
+/*adding icon hover glow */
 .twitter-link {
+  transition: .5s;
   text-decoration: none; 
   color: inherit; 
 }
+
 .twitter-link i {
   color: inherit; 
 }
+
+.twitter-link :hover::before {
+  transform: scale(1.1);
+}
+
 .twitter-link:hover {
-  color: inherit; 
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
 }
 
 .e-mail-link {
+  transition: .5s;
   text-decoration: none; 
   color: inherit; 
 }
+
 .e-mail-link i {
   color: inherit; 
 }
+
+.e-mail-link :hover::before {
+  transform: scale(1.1);
+}
+
 .e-mail-link:hover {
-  color: inherit; 
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
 }
 
 .github-link {
+  transition: .5s;
   text-decoration: none; 
-  color: inherit; 
-}
-.github-link i {
-  color: inherit; 
-}
-.github-link:hover {
   color: inherit; 
 }
 
+.github-link i {
+  color: inherit; 
+}
+
+.github-link :hover::before {
+  transform: scale(1.1);
+}
+
+.github-link:hover {
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
 .linkedin-link {
+  transition: .5s;
   text-decoration: none; 
   color: inherit; 
 }
+
 .linkedin-link i {
   color: inherit; 
 }
-.linkedin-link:hover {
-  color: inherit; 
+
+.linkedin-link :hover::before {
+  transform: scale(1.1);
 }
+
+.linkedin-link:hover {
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
+/*adding hover link end*/
 
 .a {
   color: white;
@@ -329,6 +362,8 @@ p {
 
 .a:hover {
   color: #00bcd4;
+  background-color: none;
+  text-decoration-color: grey;
   background-color: none;
   text-decoration-color: grey;
   transition: 0.3s ease-out;
@@ -372,6 +407,14 @@ p {
 #scrollToTopBtn:hover {
   background-color: rgb(43, 43, 43);
 }
+.wit{
+  text-decoration: none;
+  color: #000;
+}
+.wit:hover{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
 /* Custom scrollbar for WebKit browsers */
 body::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
@@ -399,4 +442,5 @@ body {
 body:hover {
   scrollbar-width: thin; 
   scrollbar-color: #008000 #CCFFCC; 
+
 }
