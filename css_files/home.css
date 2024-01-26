@@ -197,14 +197,11 @@ a:hover {
 footer {
   background-color: #00796b;
   color: #fff;
-  height: 28vh;
   padding: 20px;
   text-align: center;
-  /* position:relative; */
   width: 100%;
-  font-size: 14px !important;
-  
   bottom: 0 !important;
+  margin-top: 8%;
 }
 
 .socials {
@@ -418,7 +415,7 @@ p {
 .wit:hover{
   color: #fff;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.5s;}
 /* Custom scrollbar for WebKit browsers */
 body::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
