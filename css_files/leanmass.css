@@ -11,6 +11,7 @@ body {
 .out {
     background-image: url(../images/lbm.png);
     background-size: cover;
+    height: 800px;
 }
 
 #calculator {
