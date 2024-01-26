@@ -20,7 +20,10 @@ header {
   text-align: center;
   letter-spacing: 0.5em;
   font-weight: 900;
-  background-color: #00bcd4;
+  background-image: url("../images/done.jpg");
+  background-size: cover;
+  background-position: center;
+
   color: #fff;
   padding: 1rem 0;
 
@@ -34,10 +37,12 @@ header {
   top: 80px;
   left: 0;
   width: 100%;
-  background-color: #00796b;
   overflow: visible;
   z-index: 1000;
   z-index: 1000;
+  background-image: url("../images/idk.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 
