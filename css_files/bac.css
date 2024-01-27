@@ -1,0 +1,58 @@
+body {
+    background-image: url(../images/bac.jpg);
+    background-size: cover;
+  }
+  
+  .calculator {
+    background-color: transparent;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .8);
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .out {
+    padding-left: 100px;
+    padding-right: 10px;
+  }
+  
+  .output {
+    padding-top: 10px;
+  }
+  
+  .gender_box,
+  .age,
+  .weight,
+  .drinks,
+  .last-drink {
+    margin-bottom: 20px;
+  }
+  
+  .input-btn {
+    text-align: center;
+  }
+  
+  #outputTarget {
+    background-color: #6f6f6f; 
+    padding: 20px;
+  }
+  
+  .weight,
+  .drinks,
+  .last-drink {
+    padding: 10px;
+    background-color: rgba(232, 124, 124, 0.8);
+    border-radius: 5px;
+  }
+  
+  .weight input,
+  .drinks input,
+  .last-drink input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
