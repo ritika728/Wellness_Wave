@@ -8,6 +8,7 @@
     background-color: transparent;
     font-weight: bold;
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    margin-top: 20%;
 }
 .main{
     table-layout:fixed;

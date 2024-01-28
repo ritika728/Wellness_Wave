@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
   
@@ -56,4 +55,3 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.scrollTop = 0;
     });
   });
-  

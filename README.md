@@ -28,7 +28,7 @@ We welcome contributions from the community. If you have ideas for improvements,
 - Complete easy issues within 1 day, medium within 2-3 days, and hard within 4 days; if unable, mentors may reassign at their discretion, fostering a time-sensitive and collaborative contribution process.
 
 ## Getting Started
-
+# Installation video # - [Click](https://drive.google.com/file/d/1_t-MKaGXV-AP5FBFmGUZvr1vS0k0vX3Q/view?usp=sharing)
 1. **Star** and **Fork** this Repository
 2. Clone the forked repository:
 
