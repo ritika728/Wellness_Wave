@@ -445,3 +445,56 @@ body:hover {
   scrollbar-color: #008000 #CCFFCC; 
 
 }
+.cookie-consent {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #00796b;
+  color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; /* Align elements vertically */
+  align-items: flex-start; /* Align elements to the start (left) */
+}
+
+.cookie-icon-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add some spacing between icon and text */
+}
+
+.cookie-icon-container i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ecf0f1;
+}
+
+.cookie-icon-container span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ecf0f1;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-buttons button {
+  background-color: #3498db;
+  color: #ecf0f1;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-buttons button:hover {
+  background-color: #2980b9;
+}
