@@ -29,18 +29,6 @@ header {
 
 }
 
-.navbar {
-  position: fixed !important;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  background-color: #00796b;
-  overflow: visible;
-  z-index: 1000;
-  z-index: 1000;
-}
-
-
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -54,7 +42,6 @@ header {
 section {
   margin-top: 20px;
 }
-
 section h2 {
   color: #3498db;
 }
@@ -67,12 +54,6 @@ section p {
 a {
   text-decoration: none;
 }
-
-
-a:hover {
-  text-decoration: underline;
-}
-
 
 .navbar ul {
   list-style: none;

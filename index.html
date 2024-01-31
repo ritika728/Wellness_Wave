@@ -12,7 +12,7 @@
 
     <!----hamburgermenu-->
     <link rel="stylesheet" href="./css_files/hambg.css">
-
+  <link rel="stylesheet" href="./css_files/navbar.css">
     <link rel="shortcut icon" type="image/jpg" href="images/wave (1).png"/>
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     
@@ -32,39 +32,39 @@
     </div>
 </div>
 
-
-    <header>
-        <h1>WELLNESS WAVE</h1>
-    </header>
-    <div class="navbar" id="navbar_home">
-        <ul>
-            <li class="navlist"><a href="./index.html" class="home">Home</a></li>
-            <li class="navlist"><a href="./html_files/fitnesstracking.html" class="home">Tracking</a></li>
-            <li class="navlist"><a href="./html_files/wellness.html" class="home">Wellness</a></li>
-            <li class="navlist"><a href="./enroll/index.html" class="home">Enroll Now!</a></li>
-            <li class="navlist"><a href="./html_files/feedback.html" class="home">Rate Us</a></li>
-            <li class="navlist"><a href="./html_files/faq.html" class="home">FAQ</a></li>
+<div class="nav-container">
+    <nav class="newNav">
+        <a href="#" class="nav__logo" data-aos="fade-right">Wellness Wave<span>.</span></a>
+        
+        <ul class="navLinks">
+            <li class="link" data-aos="fade-down"><a href="./index.html">Home</a></li>
+            <li class="link" data-aos="fade-down"><a href="./html_files/fitnesstracking.html">Tracking</a></li>
+            <li class="link" data-aos="fade-down"><a href="./html_files/wellness.html">Wellness</a></li>
+            <li class="link" data-aos="fade-down"><a href="./enroll/index.html">Enroll Now</a></li>
+            <li class="link" data-aos="fade-down"><a href="./html_files/feedback.html">Rate Us</a></li>
+            <li class="link" data-aos="fade-down"><a href="./html_files/faq.html">FAQ</a></li>
+            <li class="link" data-aos="fade-down"><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+        <div class="hamburger" data-aos="fade-down">
+          <div class="hamburger-menu">
+            <div class="hamburger-icon"onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html"onclick="toggleMenu()">Home</a></li>
+                <li><a href="./html_files/fitnesstracking.html"onclick="toggleMenu()">Tracking</a></li>
+                <li><a href="./html_files/wellness.html"onclick="toggleMenu()">Wellness</a></li>
+                <li><a href="./enroll/index.html"onclick="toggleMenu()">Enroll Now!</a></li>
+                <li><a href="./html_files/feedback.html" onclick="toggleMenu()">Rate Us</a></li>
+                <li><a href="./html_files/faq.html" onclick="toggleMenu()">FAQ</a></li>
+            </div>
+        </div>
+        </div>
+    </nav>
+</div>
 
-    <!--hamburger menu-->
-    <div class="navbar" id="hamburger-nav">
-      <div class="hamburger-menu">
-          <div class="hamburger-icon"onclick="toggleMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-          <div class="menu-links">
-              <li><a href="./index.html"onclick="toggleMenu()">Home</a></li>
-              <li><a href="./html_files/fitnesstracking.html"onclick="toggleMenu()">Tracking</a></li>
-              <li><a href="./html_files/wellness.html"onclick="toggleMenu()">Wellness</a></li>
-              <li><a href="./enroll/index.html"onclick="toggleMenu()">Enroll Now!</a></li>
-              <li><a href="./html_files/feedback.html" onclick="toggleMenu()">Rate Us</a></li>
-              <li><a href="./html_files/faq.html" onclick="toggleMenu()">FAQ</a></li>
-          </div>
-      </div>
-      </div> 
 
     <div class="section" id="about">
         <h2>About</h2>
