@@ -76,3 +76,14 @@
     opacity: 0.75;
     border-radius: 1rem;
   }
+
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}

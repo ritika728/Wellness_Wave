@@ -1,0 +1,134 @@
+/* Navbar start */
+.nav-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #091020;
+  z-index: 9999;
+}
+
+.nav__logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav__logo span {
+  color: red;
+}
+
+.nav__logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.newNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  height: auto;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  list-style: none;
+  gap: 1.2rem;
+  position: relative;
+  top: 0.5rem;
+  z-index: 10;
+}
+
+.link a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.link a::before,
+.link a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: red;
+  transition: all 0.2s ease-in-out;
+}
+
+.link a::before {
+  bottom: -5px;
+  left: 0;
+}
+
+.link a::after {
+  top: -5px;
+  right: 0;
+}
+
+.link.active a::before,
+.link.active a::after {
+  width: 100%;
+}
+
+.link a:hover::before,
+.link a:hover::after {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger {
+  height: 2rem;
+  width: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+  transition: 0.2s;
+}
+
+.line {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 1220px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    background-color: #091020;
+    width: 0;
+    left: 0;
+    height: 100vh;
+    padding: 2rem 0;
+    flex-direction: column;
+    transition: width 0.2s;
+    overflow: hidden;
+  }
+
+  .navLinks li {
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: #1f2532;
+    z-index: 10;
+  }
+}
+/* Navbar end */

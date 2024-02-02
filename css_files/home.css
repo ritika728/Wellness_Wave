@@ -3,6 +3,7 @@ body {
   margin: 80px;
   padding: 0;
   color: #333;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,23 +23,18 @@ header {
   background-color: #00bcd4;
   color: #fff;
   padding: 1rem 0;
-  z-index: 1000;
-  /* to Ensure the header is above other elements */
-
 }
 
 .navbar {
-  position: fixed !important;
+  position: fixed;
   top: 78px;
   left: 0;
   width: 100%;
   background-color: #00796b;
   overflow: hidden;
   z-index: 1000;
-  z-index: 1000;
-
+  /* to Ensure the header is above other elements */
 }
-
 
 .container {
   max-width: 800px;
@@ -53,7 +49,6 @@ header {
 section {
   margin-top: 20px;
 }
-
 section h2 {
   color: #3498db;
 }
@@ -66,12 +61,6 @@ section p {
 a {
   text-decoration: none;
 }
-
-
-a:hover {
-  text-decoration: underline;
-}
-
 
 .navbar ul {
   list-style: none;
@@ -198,9 +187,8 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
-  /* position:relative; */
-  bottom: 0 !important;
   width: 100%;
+  bottom: 0 !important;
   margin-top: 8%;
 }
 
@@ -415,7 +403,7 @@ p {
 .wit:hover{
   color: #fff;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.5s;}
 /* Custom scrollbar for WebKit browsers */
 body::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
@@ -444,4 +432,57 @@ body:hover {
   scrollbar-width: thin; 
   scrollbar-color: #008000 #CCFFCC; 
 
+}
+.cookie-consent {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #00796b;
+  color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; /* Align elements vertically */
+  align-items: flex-start; /* Align elements to the start (left) */
+}
+
+.cookie-icon-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add some spacing between icon and text */
+}
+
+.cookie-icon-container i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ecf0f1;
+}
+
+.cookie-icon-container span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ecf0f1;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-buttons button {
+  background-color: #3498db;
+  color: #ecf0f1;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-buttons button:hover {
+  background-color: #2980b9;
 }
