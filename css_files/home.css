@@ -23,10 +23,17 @@ header {
   background-color: #00bcd4;
   color: #fff;
   padding: 1rem 0;
+}
 
+.navbar {
+  position: fixed;
+  top: 78px;
+  left: 0;
+  width: 100%;
+  background-color: #00796b;
+  overflow: hidden;
   z-index: 1000;
   /* to Ensure the header is above other elements */
-
 }
 
 .container {
