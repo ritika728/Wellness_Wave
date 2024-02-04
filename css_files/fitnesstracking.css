@@ -4,7 +4,7 @@
     margin: 20px auto;
     margin-top: 17%;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -48,7 +48,7 @@
     color: #3498db;
 }
 .gradient-hover {
-  background: linear-gradient(to right, #f5f5f5, #e5e5e5, #d5d5d5);
+  background: linear-gradient(131deg,#F0F0F0, #F5F5F5, #FAF0E6);
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -57,7 +57,7 @@
 }
 
 .gradient-hover:hover {
-  background: linear-gradient(to right, #e5e5e5, #d5d5d5, #c5c5c5);
+  background: linear-gradient(131deg, #FFEBCD, #FAF0E6, #F5DEB3);
 }
 
 
