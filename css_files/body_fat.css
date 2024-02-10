@@ -8,3 +8,7 @@ body{
    font-weight: bold;
    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
+#result{
+    color: black;
+    text-shadow: 1px 1px 3px white ,-1px -1px 3px white ;
+}
