@@ -1,6 +1,6 @@
-function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open")
-}
+let hamburger = document.querySelector('.ham');
+
+hamburger.addEventListener('click' , ()=> {
+    let navi = document.querySelector('.navLinks');
+    navi.classList.toggle("active");
+})
