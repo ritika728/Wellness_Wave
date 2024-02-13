@@ -88,7 +88,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.hamburger {
+.ham {
   height: 2rem;
   width: 1.7rem;
   display: flex;
@@ -98,15 +98,22 @@
   transition: 0.2s;
 }
 
+
 .line {
-  height: 5px;
+  height: 2px;
+  width: 25px;
+  background-color: #fff;
   width: 100%;
-  background-color: white;
-  border-radius: 2px;
 }
 
-@media screen and (max-width: 1220px) {
-  .hamburger {
+.navLinks{
+  position: relative;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .ham {
     display: flex;
     cursor: pointer;
   }
@@ -115,13 +122,18 @@
     position: absolute;
     top: 70px;
     background-color: #091020;
-    width: 0;
+    width: 100%;
     left: 0;
-    height: 100vh;
-    padding: 2rem 0;
+    height: 0;
     flex-direction: column;
-    transition: width 0.2s;
+    transition: height 0.2s ease-in-out;
     overflow: hidden;
+    padding-left: 0;
+  }
+
+  .navLinks.active {
+    height: 500px;
+    transition: all 0.2s ease-in-out;
   }
 
   .navLinks li {
@@ -129,6 +141,10 @@
     padding: 0.5rem 0;
     background-color: #1f2532;
     z-index: 10;
+    text-align: center;
+    left: 0;
   }
-}
+} 
 /* Navbar end */
+
+
