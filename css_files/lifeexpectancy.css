@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: 95%;
+    background-image: url(../images/lifeexpectancy.jpeg);
+  }
+  .calculator{
+    background-color: transparent;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    width: 70%; 
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+   }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #result {
+    margin-top: 20px;
+    background-color: #a3f0f0;
+    padding: 5px;
+  }
+  
