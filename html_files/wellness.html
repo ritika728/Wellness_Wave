@@ -15,14 +15,42 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha384-ezlrJyRBD9N5ZXUUqNl8XqVAjjc6b3lc1ce6Rrp+9/gs6gKDT3Vl+kD5tr5D2Gff" crossorigin="anonymous">
-  </head>
+    <style>
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        #scrollPath {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        #progressbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background: linear-gradient(to top, #008aff, #00ffe7);
+            z-index: 333333;
+        }
+    </style>
+</head>
+
 <body style="background-image: url('../images/main.jpg');">
-    
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
     <!-- navbar start -->
     <div class="nav-container">
         <nav class="newNav">
             <a href="#" class="nav__logo" data-aos="fade-right">Wellness Wave<span>.</span></a>
-            
+
             <ul class="navLinks">
                 <li class="link" data-aos="fade-down"><a href="../index.html">Home</a></li>
                 <li class="link" data-aos="fade-down"><a href="./fitnesstracking.html">Tracking</a></li>
@@ -53,12 +81,12 @@
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-              </div>
             </div>
-        </nav>
+    </div>
+    </nav>
     </div>
     <!-- navbar ends -->
-    
+
     <section>
         <div class="container">
             <div class="card">
@@ -153,7 +181,7 @@
         <div class="footer-part">
             <h2 style="padding-left: 80px;">Wellness Wave<span style="color: red;">.</span></h2>
             <div class="slogan">
-              <pre>
+                <pre>
            "Sweat Today,Shine Tomorrow.
       Embrace the Burn, Sculpt the Strength.
       Your Journey, Your Body, Your Triumph. 
@@ -161,7 +189,7 @@
               </pre>
             </div>
         </div>
-      
+
         <!-- Part 2: Links -->
         <div class="footer-part">
             <h2>Quick Links</h2>
@@ -172,7 +200,7 @@
                 <a href="#">FAQ</a>
             </div>
         </div>
-      
+
         <!-- Part 3: Social Media Links -->
         <div class="footer-part">
             <h2>Connect with Us</h2>
@@ -183,18 +211,30 @@
                 <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-      <hr >
+        <hr>
         <!-- Copyright -->
         <div class="copyright">
             Copyright © 2024 Wellness Wave. All rights reserved.
         </div>
-      
-      </footer>
-      
+
+    </footer>
+
+    <script>
+
+        let progress = document.getElementById("progressbar");
+
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+
+    </script>
+
     <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-      <script src="../javascript/hambg.js"></script>
-      <script src="../javascript/index.js"></script>
+    <script src="../javascript/hambg.js"></script>
+    <script src="../javascript/index.js"></script>
 </body>
 
 </html>
