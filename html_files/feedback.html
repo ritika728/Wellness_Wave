@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Star Rating Form</title>
-    <link rel="stylesheet" href="../css_files/feedback.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="../css_files/hambg.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css_files/navbar.css">
-    <link rel="stylesheet" href="../css_files/footer.css">
-    
-  </head>
-    <body style="background-image: url('../images/main.jpg');" class="body">
-      
-      
-    <!-- navbar start -->
-    <div class="nav-container">
-      <nav class="newNav">
-          <a href="#" class="nav__logo" data-aos="fade-right">Wellness Wave<span>.</span></a>
-          
-          <ul class="navLinks">
-              <li class="link" data-aos="fade-down"><a href="../index.html">Home</a></li>
-              <li class="link" data-aos="fade-down"><a href="./fitnesstracking.html">Tracking</a></li>
-              <li class="link" data-aos="fade-down"><a href="./wellness.html">Wellness</a></li>
-              <li class="link" data-aos="fade-down"><a href="../enroll/index.html">Enroll Now</a></li>
-              <li class="link" data-aos="fade-down"><a href="./feedback.html">Rate Us</a></li>
-              <li class="link" data-aos="fade-down"><a href="./faq.html">FAQ</a></li>
-              <li class="link" data-aos="fade-down"><a href="./blog.html">Blog</a></li>
-              <li class="link" data-aos="fade-down"><a href="../index.html#contact">Contact</a></li>
-          </ul>
-          <!-- <div class="hamburger" data-aos="fade-down">
+
+<head>
+  <meta charset="utf-8">
+  <title>Star Rating Form</title>
+  <link rel="stylesheet" href="../css_files/feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../css_files/hambg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css_files/navbar.css">
+  <link rel="stylesheet" href="../css_files/footer.css">
+  <style>
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    #scrollPath {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 15px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 15px;
+      height: 100%;
+      background: linear-gradient(to top, #008aff, #00ffe7);
+      z-index: 333333;
+    }
+  </style>
+
+</head>
+
+<body style="background-image: url('../images/main.jpg');" class="body">
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+
+  <!-- navbar start -->
+  <div class="nav-container">
+    <nav class="newNav">
+      <a href="#" class="nav__logo" data-aos="fade-right">Wellness Wave<span>.</span></a>
+
+      <ul class="navLinks">
+        <li class="link" data-aos="fade-down"><a href="../index.html">Home</a></li>
+        <li class="link" data-aos="fade-down"><a href="./fitnesstracking.html">Tracking</a></li>
+        <li class="link" data-aos="fade-down"><a href="./wellness.html">Wellness</a></li>
+        <li class="link" data-aos="fade-down"><a href="../enroll/index.html">Enroll Now</a></li>
+        <li class="link" data-aos="fade-down"><a href="./feedback.html">Rate Us</a></li>
+        <li class="link" data-aos="fade-down"><a href="./faq.html">FAQ</a></li>
+        <li class="link" data-aos="fade-down"><a href="./blog.html">Blog</a></li>
+        <li class="link" data-aos="fade-down"><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <!-- <div class="hamburger" data-aos="fade-down">
             <div class="hamburger-menu">
               <div class="hamburger-icon"onclick="toggleMenu()">
                   <span></span>
@@ -45,108 +74,119 @@
                   <li><a href="./html_files/faq.html" onclick="toggleMenu()">FAQ</a></li>
               </div>
           </div> -->
-          <div class="ham">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          </div>
-      </nav>
+      <div class="ham">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+  </div>
+  </nav>
   </div>
   <!-- navbar ends -->
-  
-    <div class="container">
-      <div class="post">
-        <div class="text">Thanks for rating us!</div>
-        <div class="edit">EDIT</div>
-        <div class ="Home" onclick="nav('../index.html')">Home</div>
-    </div>
-      <div class="star-widget">
-        <input type="radio" name="rate" id="rate-5">
-        <label for="rate-5" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-4">
-        <label for="rate-4" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-3">
-        <label for="rate-3" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-2">
-        <label for="rate-2" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-1">
-        <label for="rate-1" class="fas fa-star"></label>
-        <form action="#">
-          <div class="textarea">
-            <textarea cols="30" placeholder="Describe your experience.."></textarea>
-          </div>
-          <div class="btn">
-            <button type="submit">Post</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <script>
-      const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".star-widget");
-      const editBtn = document.querySelector(".edit");
-      const homeBtn = document.querySelector(".Home");
-      function nav(page) {   
-        window.location.href=page
-    }
-      btn.onclick = ()=>{
-        widget.style.display = "none";
-        post.style.display = "block";
-        editBtn.onclick = ()=>{
-          widget.style.display = "block";
-          post.style.display = "none";
-        }
-        return false;
-      }
-    </script>
-    <script src="../javascript/hambg.js"></script>
-  </body>
-  
-  <footer>
 
-    <!-- Part 1: Website Name and Slogan -->
-    <div class="footer-part">
-        <h2 style="padding-left: 80px;">Wellness Wave<span style="color: red;">.</span></h2>
-        <div class="slogan">
-          <pre>
+  <div class="container">
+    <div class="post">
+      <div class="text">Thanks for rating us!</div>
+      <div class="edit">EDIT</div>
+      <div class="Home" onclick="nav('../index.html')">Home</div>
+    </div>
+    <div class="star-widget">
+      <input type="radio" name="rate" id="rate-5">
+      <label for="rate-5" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-4">
+      <label for="rate-4" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-3">
+      <label for="rate-3" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-2">
+      <label for="rate-2" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-1">
+      <label for="rate-1" class="fas fa-star"></label>
+      <form action="#">
+        <div class="textarea">
+          <textarea cols="30" placeholder="Describe your experience.."></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit">Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    const btn = document.querySelector("button");
+    const post = document.querySelector(".post");
+    const widget = document.querySelector(".star-widget");
+    const editBtn = document.querySelector(".edit");
+    const homeBtn = document.querySelector(".Home");
+    function nav(page) {
+      window.location.href = page
+    }
+    btn.onclick = () => {
+      widget.style.display = "none";
+      post.style.display = "block";
+      editBtn.onclick = () => {
+        widget.style.display = "block";
+        post.style.display = "none";
+      }
+      return false;
+    }
+  </script>
+  <script src="../javascript/hambg.js"></script>
+</body>
+
+<footer>
+
+  <!-- Part 1: Website Name and Slogan -->
+  <div class="footer-part">
+    <h2 style="padding-left: 80px;">Wellness Wave<span style="color: red;">.</span></h2>
+    <div class="slogan">
+      <pre>
        "Sweat Today,Shine Tomorrow.
   Embrace the Burn, Sculpt the Strength.
   Your Journey, Your Body, Your Triumph. 
   Elevate your Fitness,Elevate your Life."
           </pre>
-        </div>
     </div>
-  
-    <!-- Part 2: Links -->
-    <div class="footer-part">
-        <h2>Quick Links</h2>
-        <div class="footer-links">
-            <a href="#">Tracking</a>
-            <a href="#">Enroll Now</a>
-            <a href="#">Rate Us</a>
-            <a href="#">FAQ</a>
-        </div>
+  </div>
+
+  <!-- Part 2: Links -->
+  <div class="footer-part">
+    <h2>Quick Links</h2>
+    <div class="footer-links">
+      <a href="#">Tracking</a>
+      <a href="#">Enroll Now</a>
+      <a href="#">Rate Us</a>
+      <a href="#">FAQ</a>
     </div>
-  
-    <!-- Part 3: Social Media Links -->
-    <div class="footer-part">
-        <h2>Connect with Us</h2>
-        <div class="footer-social">
-            <!-- Replace the FontAwesome icons with your actual social media icons -->
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
+  </div>
+
+  <!-- Part 3: Social Media Links -->
+  <div class="footer-part">
+    <h2>Connect with Us</h2>
+    <div class="footer-social">
+      <!-- Replace the FontAwesome icons with your actual social media icons -->
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
-  <hr >
-    <!-- Copyright -->
-    <div class="copyright">
-        Copyright © 2024 Wellness Wave. All rights reserved.
-    </div>
-  
-  </footer>
-  <script src="../javascript/hambg.js"></script>
+  </div>
+  <hr>
+  <!-- Copyright -->
+  <div class="copyright">
+    Copyright © 2024 Wellness Wave. All rights reserved.
+  </div>
+
+</footer>
+<script>
+
+  let progress = document.getElementById("progressbar");
+
+  let totalHeight = document.body.scrollHeight - window.innerHeight;
+  window.onscroll = function () {
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+  }
+
+</script>
+<script src="../javascript/hambg.js"></script>
 
 </html>

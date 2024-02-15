@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index" />
     <title>All Calculators</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        #scrollPath {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        #progressbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background: linear-gradient(to top, #008aff, #00ffe7);
+            z-index: 333333;
+        }
+    </style>
     <link rel="stylesheet" href="../css_files/footer.css">
     <link rel="stylesheet" href="../css_files/navbar.css">
     <!-- <link rel="stylesheet" href="../css_files/hambg.css"> -->
@@ -19,12 +43,14 @@
 </head>
 
 <body style="background-image: url('../images/main.jpg');">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
 
     <!-- navbar start -->
     <div class="nav-container">
         <nav class="newNav">
             <a href="#" class="nav__logo" data-aos="fade-right">Wellness Wave<span>.</span></a>
-            
+
             <ul class="navLinks">
                 <li class="link" data-aos="fade-down"><a href="../index.html">Home</a></li>
                 <li class="link" data-aos="fade-down"><a href="./fitnesstracking.html">Tracking</a></li>
@@ -55,12 +81,12 @@
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-              </div>
             </div>
-        </nav>
+    </div>
+    </nav>
     </div>
     <!-- navbar ends -->
-    
+
     <section class="types">
         <div class="boxs">
             <h1 class="health_title">Health Calculators for Informed Wellness</h1>
@@ -70,82 +96,8 @@
                 weight, or optimize your fitness routine, our collection of calculators is here to guide you.</p>
             <div class="all_box">
                 <div class="calci">
-                <a href="bmi.html" class="category">
-                    <div class="container_box gradient-hover" id="newdesign">
-                        <h4>BMI Calculator</h4>
-                        <p>BMI is commonly used in public health and clinical settings as a quick and easy method to assess whether a person has a healthy body weight.
-                        </p>
-                    </div>
-                </a>
-                <a href="sleep.html" class="category">
-                    <div class="container_box gradient-hover">
-                        <h4>Sleep Calculator</h4>
-                        <p>Sleep is a cornerstone of a healthy lifestyle, and the amount of sleep you get can significantly impact various aspects of your physical and mental health. </p>
-                    </div>
-                </a>
-                <a href="body_fat.html" class="category">
-                    <div class="container_box gradient-hover">
-
-                        <h4>Body Fat Calculator</h4>
-                        <p>Body Fat percentage offers you a quick estimate of how much fat you have relative to your weight. This gives a quick snap-shot of total fat relative to the person's weight and age. </p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="calci">
-                <a href="calorie.html" class="category">
-                    <div class="container_box gradient-hover">
-                        <h4>Calorie Calculator</h4>
-                        <p>Counting calories is crucial for managing weight and achieving fitness goals. By tracking calories, individuals make informed choices, fostering a healthy relationship with food and optimizing overall well-being.  
-                        </p>
-                    </div>
-                </a>
-                <a href="water_intake.html" class="category">
-                    <div class="container_box gradient-hover">
-                        <h4>Water Intake Calculator</h4>
-                        <p>70% water, a liquid foundation shaping life's symphony. Every sip reinforces its melody, every glass replenishes its rhythm, ensuring health's harmonious composition.</p>
-                    </div>
-                </a>
-                <a href="bloodpressure.html" class="category">
-                    <div class="container_box gradient-hover">
-                        <h4>Blood Pressure Calculator</h4>
-                        <p>70% water, a liquid foundation shaping life's symphony. Every sip reinforces its melody, every glass replenishes its rhythm, ensuring health's harmonious composition.</p>
-                    </div>
-                </a>
-                <a href="bac.html" class="category">
-                    <div class="container_box gradient-hover">
-                        <h4>BAC Calculator</h4>
-                        <p>The BAC calculator helps gauge the level of impairment due to alcohol consumption by analyzing factors such as weight, time spent drinking, and the type of beverages consumed.</p>
-                    </div>
-                </a>
-                <a href="breastcancer.html" class="category">
-                    <div class="container_box gradient-hover">
-                        <h4>Breast Cancer Risk Calculator</h4>
-                        <p>This Breast Cancer Risk calculator is used to estimate an individual's breast cancer risk based on various factors such as age, family history, and reproductive history.</p>
-                    </div>
-                </a>
-                <a href="depression.html" class="category">
-                    <div class="container_box">
-                        <h4>Depression Screnning Risk Calculator</h4>
-                        <p>The Depression Screening risk calculator assesses individuals' mental health by evaluating key factors, providing a quick and effective way to identify potential symptoms and risks associated with depression.</p>
-                    </div>
-                </a>
-                <a href="lifeexpectancy.html" class="category">
-                    <div class="container_box">
-                        <h4>Life Expectancy Calculator</h4>
-                        <p>A life expectancy calculator estimates an individual's likely lifespan based on various factors such as age, gender, health, lifestyle choices, providing insights into potential years of additional life.</p>
-                    </div>
-                </a>
-                <a href="ideal_weight.html" class="category">
-                    <div class="container_box gradient-hover">
-                        <h4>Ideal Body Weight Calculator</h4>
-                        <p>A body weight calculator is a convenient tool that helps individuals determine their optimal weight based on factors like height, age, and gender. By inputting these details, users can quickly assess their ideal weight range, promoting a healthier lifestyle. </p>
-                    </div>
-                </a>
-            </div>
-        </div>
                     <a href="bmi.html" class="category">
-                        <div class="container_box gradient-hover">
+                        <div class="container_box gradient-hover" id="newdesign">
                             <h4>BMI Calculator</h4>
                             <p>BMI is commonly used in public health and clinical settings as a quick and easy method to
                                 assess whether a person has a healthy body weight.
@@ -159,23 +111,6 @@
                                 significantly impact various aspects of your physical and mental health. </p>
                         </div>
                     </a>
-                    <a href="heart_rate.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>Heart Rate Calculator</h4>
-                            <p>Your heart rate is an important indicator of your overall health too. When your heart
-                                rate is too fast or too slow, that can be a sign of heart or other health problems.Thus
-                                here is a target heart rate calculator that helps you maintain a proper heartbeat and
-                                stay healthy. </p>
-                        </div>
-                    </a>
-                    <a href="due_date.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>Pregnancy Due Date Calculator</h4>
-                            <p>It is important to have an accurate due date so that you and your healthcare team can
-                                monitor your pregnancy and baby's growth and to help keep you and your baby safe. Thus
-                                figure out your pregnancy due date with this calculator. </p>
-                        </div>
-                    </a>
                     <a href="body_fat.html" class="category">
                         <div class="container_box gradient-hover">
 
@@ -186,6 +121,8 @@
 
                         </div>
                     </a>
+                </div>
+                <div class="calci">
                     <a href="calorie.html" class="category">
                         <div class="container_box gradient-hover">
                             <h4>Calorie Calculator</h4>
@@ -209,6 +146,37 @@
                                 every glass replenishes its rhythm, ensuring health's harmonious composition.</p>
                         </div>
                     </a>
+                    <a href="bac.html" class="category">
+                        <div class="container_box gradient-hover">
+                            <h4>BAC Calculator</h4>
+                            <p>The BAC calculator helps gauge the level of impairment due to alcohol consumption by
+                                analyzing factors such as weight, time spent drinking, and the type of beverages
+                                consumed.</p>
+                        </div>
+                    </a>
+                    <a href="breastcancer.html" class="category">
+                        <div class="container_box gradient-hover">
+                            <h4>Breast Cancer Risk Calculator</h4>
+                            <p>This Breast Cancer Risk calculator is used to estimate an individual's breast cancer risk
+                                based on various factors such as age, family history, and reproductive history.</p>
+                        </div>
+                    </a>
+                    <a href="depression.html" class="category">
+                        <div class="container_box">
+                            <h4>Depression Screnning Risk Calculator</h4>
+                            <p>The Depression Screening risk calculator assesses individuals' mental health by
+                                evaluating key factors, providing a quick and effective way to identify potential
+                                symptoms and risks associated with depression.</p>
+                        </div>
+                    </a>
+                    <a href="lifeexpectancy.html" class="category">
+                        <div class="container_box">
+                            <h4>Life Expectancy Calculator</h4>
+                            <p>A life expectancy calculator estimates an individual's likely lifespan based on various
+                                factors such as age, gender, health, lifestyle choices, providing insights into
+                                potential years of additional life.</p>
+                        </div>
+                    </a>
                     <a href="ideal_weight.html" class="category">
                         <div class="container_box gradient-hover">
                             <h4>Ideal Body Weight Calculator</h4>
@@ -218,62 +186,143 @@
                                 lifestyle. </p>
                         </div>
                     </a>
-
-                    <a href="prot_intake.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>Protein Intake Calculator</h4>
-                            <p>A protein intake calculator is a tool that estimates how much protein a person needs per
-                                day based on their weight, activity level, and goals. Protein is essential for building
-                                and maintaining muscles, organs, and other tissues.</p>
-                        </div>
-                    </a>
-                    <a href="bmr.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>BMR Calculator</h4>
-                            <p>The Basal Metabolic Rate (BMR) Calculator estimates your basal metabolic rate—the amount
-                                of energy expended while at rest in a neutrally temperate environment, and in a
-                                post-absorptive state (meaning that the digestive system is inactive, which requires
-                                about 12 hours of fasting).</p>
-                        </div>
-                    </a>
-                    <a href="dri.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>DRI Calculator</h4>
-                            <p>The DRI calculator is the ultimate way to compute all the necessary macro-,
-                                micronutrition,
-                                and vitamins needed in your daily menu.</p>
-                        </div>
-                    </a>
-                    <a href="pace.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>Pace Calculator</h4>
-                            <p>A pace calculator is an online tool that helps runners determine the speed they need to
-                                maintain to reach a specific running distance within a desired time. It's useful for
-                                goal setting, planning workouts, and optimizing race strategies.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="leanmass.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>Lean Body Mass Calculator</h4>
-                            <p>Lean body mass (LBM) is a part of body composition that is defined as the difference
-                                between total body weight and body fat weight. This means that it counts the mass of all
-                                organs except body fat, including bones, muscles, blood, skin, and everything else.
-
-                            </p>
-                        </div>
-                    </a>
-                    <a href="../html_files/calc.html" class="category">
-                        <div class="container_box gradient-hover">
-                            <h4>Calories Burnt Calculator</h4>
-                            <p>A Calories Burned Calculator is a tool designed to estimate the number of calories a person burns during various activities, such as exercise or daily tasks.
-
-                            </p>
-                        </div>
-                    </a>
                 </div>
+            </div>
+            <a href="bmi.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>BMI Calculator</h4>
+                    <p>BMI is commonly used in public health and clinical settings as a quick and easy method to
+                        assess whether a person has a healthy body weight.
+                    </p>
+                </div>
+            </a>
+            <a href="sleep.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Sleep Calculator</h4>
+                    <p>Sleep is a cornerstone of a healthy lifestyle, and the amount of sleep you get can
+                        significantly impact various aspects of your physical and mental health. </p>
+                </div>
+            </a>
+            <a href="heart_rate.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Heart Rate Calculator</h4>
+                    <p>Your heart rate is an important indicator of your overall health too. When your heart
+                        rate is too fast or too slow, that can be a sign of heart or other health problems.Thus
+                        here is a target heart rate calculator that helps you maintain a proper heartbeat and
+                        stay healthy. </p>
+                </div>
+            </a>
+            <a href="due_date.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Pregnancy Due Date Calculator</h4>
+                    <p>It is important to have an accurate due date so that you and your healthcare team can
+                        monitor your pregnancy and baby's growth and to help keep you and your baby safe. Thus
+                        figure out your pregnancy due date with this calculator. </p>
+                </div>
+            </a>
+            <a href="body_fat.html" class="category">
+                <div class="container_box gradient-hover">
+
+                    <h4>Body Fat Calculator</h4>
+                    <p>Body Fat percentage offers you a quick estimate of how much fat you have relative to your
+                        weight. This gives a quick snap-shot of total fat relative to the person's weight and
+                        age. </p>
+
+                </div>
+            </a>
+            <a href="calorie.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Calorie Calculator</h4>
+                    <p>Counting calories is crucial for managing weight and achieving fitness goals. By tracking
+                        calories, individuals make informed choices, fostering a healthy relationship with food
+                        and optimizing overall well-being.
+                    </p>
+                </div>
+            </a>
+            <a href="water_intake.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Water Intake Calculator</h4>
+                    <p>70% water, a liquid foundation shaping life's symphony. Every sip reinforces its melody,
+                        every glass replenishes its rhythm, ensuring health's harmonious composition.</p>
+                </div>
+            </a>
+            <a href="bloodpressure.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Blood Pressure Calculator</h4>
+                    <p>70% water, a liquid foundation shaping life's symphony. Every sip reinforces its melody,
+                        every glass replenishes its rhythm, ensuring health's harmonious composition.</p>
+                </div>
+            </a>
+            <a href="ideal_weight.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Ideal Body Weight Calculator</h4>
+                    <p>A body weight calculator is a convenient tool that helps individuals determine their
+                        optimal weight based on factors like height, age, and gender. By inputting these
+                        details, users can quickly assess their ideal weight range, promoting a healthier
+                        lifestyle. </p>
+                </div>
+            </a>
+
+            <a href="prot_intake.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Protein Intake Calculator</h4>
+                    <p>A protein intake calculator is a tool that estimates how much protein a person needs per
+                        day based on their weight, activity level, and goals. Protein is essential for building
+                        and maintaining muscles, organs, and other tissues.</p>
+                </div>
+            </a>
+            <a href="bmr.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>BMR Calculator</h4>
+                    <p>The Basal Metabolic Rate (BMR) Calculator estimates your basal metabolic rate—the amount
+                        of energy expended while at rest in a neutrally temperate environment, and in a
+                        post-absorptive state (meaning that the digestive system is inactive, which requires
+                        about 12 hours of fasting).</p>
+                </div>
+            </a>
+            <a href="dri.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>DRI Calculator</h4>
+                    <p>The DRI calculator is the ultimate way to compute all the necessary macro-,
+                        micronutrition,
+                        and vitamins needed in your daily menu.</p>
+                </div>
+            </a>
+            <a href="pace.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Pace Calculator</h4>
+                    <p>A pace calculator is an online tool that helps runners determine the speed they need to
+                        maintain to reach a specific running distance within a desired time. It's useful for
+                        goal setting, planning workouts, and optimizing race strategies.
+                    </p>
+                </div>
+            </a>
+            <a href="leanmass.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Lean Body Mass Calculator</h4>
+                    <p>Lean body mass (LBM) is a part of body composition that is defined as the difference
+                        between total body weight and body fat weight. This means that it counts the mass of all
+                        organs except body fat, including bones, muscles, blood, skin, and everything else.
+
+                    </p>
+                </div>
+            </a>
+            <a href="../html_files/calc.html" class="category">
+                <div class="container_box gradient-hover">
+                    <h4>Calories Burnt Calculator</h4>
+                    <p>A Calories Burned Calculator is a tool designed to estimate the number of calories a person burns
+                        during various activities, such as exercise or daily tasks.
+
+                    </p>
+                </div>
+            </a>
+        </div>
 
     </section>
+
+
+
+
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/9e5d1ce9c2.js" crossorigin="anonymous"></script>
     <footer>
@@ -282,7 +331,7 @@
         <div class="footer-part">
             <h2 style="padding-left: 80px;">Wellness Wave<span style="color: red;">.</span></h2>
             <div class="slogan">
-              <pre>
+                <pre>
            "Sweat Today,Shine Tomorrow.
       Embrace the Burn, Sculpt the Strength.
       Your Journey, Your Body, Your Triumph. 
@@ -290,7 +339,7 @@
               </pre>
             </div>
         </div>
-      
+
         <!-- Part 2: Links -->
         <div class="footer-part">
             <h2>Quick Links</h2>
@@ -301,7 +350,7 @@
                 <a href="#">FAQ</a>
             </div>
         </div>
-      
+
         <!-- Part 3: Social Media Links -->
         <div class="footer-part">
             <h2>Connect with Us</h2>
@@ -312,56 +361,71 @@
                 <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-      <hr >
+        <hr>
         <!-- Copyright -->
         <div class="copyright">
             Copyright © 2024 Wellness Wave. All rights reserved.
         </div>
-      
-      </footer>
-        <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
+    </footer>
+    <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-            var tl = gsap.timeline();
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
 
-            tl.from(".nav-container" , {
-                opacity:0,
-                y:-20,
-                duration:0.5,
-                delay:0.5
-            })
-            tl.from(".nav__logo" , {
-                opacity:0,
-                x:-20,
-            })
-            tl.from(".link" , {
-                opacity:0,
-                y:10,
-                stagger:0.2,
-            })
+        var tl = gsap.timeline();
 
-            tl.from(".types" , {
-                opacity : 0,
-                y:20,
-            })
+        tl.from(".nav-container", {
+            opacity: 0,
+            y: -20,
+            duration: 0.5,
+            delay: 0.5
+        })
+        tl.from(".nav__logo", {
+            opacity: 0,
+            x: -20,
+        })
+        tl.from(".link", {
+            opacity: 0,
+            y: 10,
+            stagger: 0.2,
+        })
 
-            tl.from(".boxs .health_title" , {
-                opacity:0,
-                y:10,
-            })
+        tl.from(".types", {
+            opacity: 0,
+            y: 20,
+        })
 
-            tl.from(".boxs p, .category" , {
-                opacity:0,
-                y:10,
-            })
+        tl.from(".boxs .health_title", {
+            opacity: 0,
+            y: 10,
+        })
 
-            tl.from("footer" , {
-                opacity:0,
-            })
+        tl.from(".boxs p, .category", {
+            opacity: 0,
+            y: 10,
+        })
 
-        </script>
+        tl.from("footer", {
+            opacity: 0,
+        })
+
+    </script>
+    <script>
+
+        let progress = document.getElementById("progressbar");
+
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+
+    </script>
+
+
     <script src="../javascript/hambg.js"></script>
     <script src="../javascript/index.js"></script>
 </body>

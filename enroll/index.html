@@ -12,9 +12,36 @@
   <title>Pricing Cards</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    #scrollPath {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 15px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 15px;
+      height: 100%;
+      background: linear-gradient(to top, #008aff, #00ffe7);
+      z-index: 333333;
+    }
+  </style>
 </head>
 
 <body>
+
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
   <!-- navbar start -->
   <div class="nav-container">
     <nav class="newNav">
@@ -160,6 +187,18 @@
     </div>
 
   </footer>
+
+  <script>
+
+    let progress = document.getElementById("progressbar");
+
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+
+  </script>
 
   <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
 

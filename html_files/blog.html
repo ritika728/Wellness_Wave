@@ -14,16 +14,43 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha384-ezlrJyRBD9N5ZXUUqNl8XqVAjjc6b3lc1ce6Rrp+9/gs6gKDT3Vl+kD5tr5D2Gff" crossorigin="anonymous">
-  <title>Blog</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        #scrollPath {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        #progressbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background: linear-gradient(to top, #008aff, #00ffe7);
+            z-index: 333333;
+        }
+    </style>
+    <title>Blog</title>
 </head>
 
 <body>
 
-      <!-- navbar start -->
-      <div class="nav-container">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <!-- navbar start -->
+    <div class="nav-container">
         <nav class="newNav">
             <a href="#" class="nav__logo" data-aos="fade-right">Wellness Wave<span>.</span></a>
-            
+
             <ul class="navLinks">
                 <li class="link" data-aos="fade-down"><a href="../index.html">Home</a></li>
                 <li class="link" data-aos="fade-down"><a href="./fitnesstracking.html">Tracking</a></li>
@@ -54,18 +81,18 @@
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-              </div>
             </div>
-        </nav>
+    </div>
+    </nav>
     </div>
     <!-- navbar ends -->
-  
+
 
     <header>
         <h1 id="blog-head">Blog Post</h1>
     </header>
 
-    
+
     <div class="container" id="blogContainer">
         <div class="blog-post">
             <img src="../images/Blog/Blog 1.jpg" alt="Blog Post Image 1">
@@ -73,7 +100,9 @@
             <h2>The Importance of Healthy Living</h2>
             <div class="category-label"><span>Health</span></div>
             <p>Published on January 5, 2024</p>
-            <p>Maintaining a healthy lifestyle is crucial for overall well-being. In this blog post, we explore the importance of good nutrition, regular exercise, and mental well-being. Discover practical tips for incorporating healthy habits into your daily routine.</p>
+            <p>Maintaining a healthy lifestyle is crucial for overall well-being. In this blog post, we explore the
+                importance of good nutrition, regular exercise, and mental well-being. Discover practical tips for
+                incorporating healthy habits into your daily routine.</p>
             <a href="#" class="read-more">Read more...</a>
             <div class="blog-post-footer">
                 <span>Author: John Doe</span>
@@ -88,7 +117,9 @@
             <h2>Unlock Your Full Potential: Fitness Tips for Beginners</h2>
             <div class="category-label"><span>Fitness</span></div>
             <p>Published on January 2, 2024</p>
-            <p>Embarking on a fitness journey can be both exciting and challenging, especially for beginners. This blog post provides valuable insights and beginner-friendly fitness tips to help you kickstart your fitness routine. Get ready to unlock your full potential!.</p>
+            <p>Embarking on a fitness journey can be both exciting and challenging, especially for beginners. This blog
+                post provides valuable insights and beginner-friendly fitness tips to help you kickstart your fitness
+                routine. Get ready to unlock your full potential!.</p>
             <a href="#" class="read-more">Read more...</a>
             <div class="blog-post-footer">
                 <span>Author: Jane Smith</span>
@@ -103,10 +134,12 @@
             <h2>Mindfulness and Meditation: A Guide to Inner Peace</h2>
             <div class="category-label"><span>Meditation</span></div>
             <p>Published on January 3, 2024</p>
-            <p>In a fast-paced world, finding moments of inner peace is essential. Join us on a journey of mindfulness and meditation as we explore techniques to cultivate a calm and focused mind. Discover the transformative power of being present in the moment.</p>
+            <p>In a fast-paced world, finding moments of inner peace is essential. Join us on a journey of mindfulness
+                and meditation as we explore techniques to cultivate a calm and focused mind. Discover the
+                transformative power of being present in the moment.</p>
             <a href="#" class="read-more">Read more...</a>
             <div class="blog-post-footer">
-                <span>Author:  Emily Williams</span>
+                <span>Author: Emily Williams</span>
                 <span>Views: 80</span>
                 <span>Comments: 8</span>
             </div>
@@ -120,10 +153,12 @@
             <h2>Exploring Nature: The Benefits of Outdoor Activities</h2>
             <div class="category-label"><span>Outdoor Activities</span></div>
             <p>Published on January 3, 2024</p>
-            <p>Connecting with nature has numerous benefits for your physical and mental health. This blog post delves into the advantages of outdoor activities, from hiking to gardening. Learn how spending time in nature can rejuvenate your body and mind.</p>
+            <p>Connecting with nature has numerous benefits for your physical and mental health. This blog post delves
+                into the advantages of outdoor activities, from hiking to gardening. Learn how spending time in nature
+                can rejuvenate your body and mind.</p>
             <a href="#" class="read-more">Read more...</a>
             <div class="blog-post-footer">
-                <span>Author:  Michael Turner</span>
+                <span>Author: Michael Turner</span>
                 <span>Views: 103</span>
                 <span>Comments: 28</span>
             </div>
@@ -134,7 +169,9 @@
             <h2>Balancing Work and Wellness: Tips for a Healthy Lifestyle</h2>
             <div class="category-label"><span>Wellness</span></div>
             <p>Published on January 3, 2024</p>
-            <p>Finding a balance between work and personal well-being is a common challenge. In this blog post, we share practical tips on maintaining a healthy lifestyle while juggling a busy work schedule. Discover effective strategies for a harmonious life.</p>
+            <p>Finding a balance between work and personal well-being is a common challenge. In this blog post, we share
+                practical tips on maintaining a healthy lifestyle while juggling a busy work schedule. Discover
+                effective strategies for a harmonious life.</p>
             <a href="#" class="read-more">Read more...</a>
             <div class="blog-post-footer">
                 <span>Author: Mark Johnson</span>
@@ -148,7 +185,9 @@
             <h2>The Art of Healthy Eating: Nutrient-Rich Recipes</h2>
             <div class="category-label"><span>Food</span></div>
             <p>Published on January 3, 2024</p>
-            <p>Eating well doesn't have to be bland or boring. Join us in exploring the art of healthy eating with a collection of nutrient-rich recipes. From delicious smoothies to wholesome meals, these recipes will inspire you to nourish your body with goodness.</p>
+            <p>Eating well doesn't have to be bland or boring. Join us in exploring the art of healthy eating with a
+                collection of nutrient-rich recipes. From delicious smoothies to wholesome meals, these recipes will
+                inspire you to nourish your body with goodness.</p>
             <a href="#" class="read-more">Read more...</a>
             <div class="blog-post-footer">
                 <span>Author: Sarah Davis</span>
@@ -166,7 +205,7 @@
         <div class="footer-part">
             <h2 style="padding-left: 80px;">Wellness Wave<span style="color: red;">.</span></h2>
             <div class="slogan">
-              <pre>
+                <pre>
            "Sweat Today,Shine Tomorrow.
       Embrace the Burn, Sculpt the Strength.
       Your Journey, Your Body, Your Triumph. 
@@ -174,7 +213,7 @@
               </pre>
             </div>
         </div>
-      
+
         <!-- Part 2: Links -->
         <div class="footer-part">
             <h2>Quick Links</h2>
@@ -185,7 +224,7 @@
                 <a href="#">FAQ</a>
             </div>
         </div>
-      
+
         <!-- Part 3: Social Media Links -->
         <div class="footer-part">
             <h2>Connect with Us</h2>
@@ -196,19 +235,31 @@
                 <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-      <hr >
+        <hr>
         <!-- Copyright -->
         <div class="copyright">
             Copyright © 2024 Wellness Wave. All rights reserved.
         </div>
-      
-      </footer>
-        <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
+
+    </footer>
+    <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+
+        let progress = document.getElementById("progressbar");
+
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+
+    </script>
 
     <script src="../javascript/hambg.js"></script>
     <script src="../javascript/index.js"></script>
 
- 
+
 </body>
 
 
