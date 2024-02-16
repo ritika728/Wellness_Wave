@@ -95,14 +95,14 @@
 
   <div class="section" id="about">
     <h2>About</h2>
-    <p>Welcome to Wellness Wave, your holistic health and fitness companion designed to empower you on your journey to
+    <p class="text">Welcome to Wellness Wave, your holistic health and fitness companion designed to empower you on your journey to
       well-being. At Wellness Wave, we believe that true wellness extends beyond mere physical fitness – it encompasses
       nutrition, mental health, community support, and lifestyle choices.</p>
   </div>
 
   <div class="section" id="mission">
     <h2>Our Mission</h2>
-    <p>Our mission is to inspire and support individuals in achieving their optimal state of health and vitality. We aim
+    <p class="text">Our mission is to inspire and support individuals in achieving their optimal state of health and vitality. We aim
       to provide a comprehensive platform that goes beyond traditional fitness tracking, offering a blend of practical
       tools, expert advice, and a supportive community to guide you on your path to wellness.</p>
   </div>
@@ -229,15 +229,28 @@
   <script src="./javascript/hambg.js"></script>
   <!-- dark mode -->
   <script>
-    // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+    // Check if there is a stored preference for dark mode
+    const darkModePreference = localStorage.getItem('darkMode');
+
+    // If there is a preference, set the initial state
+    if (darkModePreference === 'enabled') {
+        $("body").addClass("dark-class");
+        $('#toggle').prop('checked', true);
+    }
+
+    // Listen for changes to the toggle
     $('#toggle').change(() => {
-       if ($('#toggle').is(":checked")) {
-          $("body").addClass("dark-class");
-       } else {
-          $("body").removeClass("dark-class")
-       }
-    })
- </script>
+        if ($('#toggle').is(":checked")) {
+            $("body").addClass("dark-class");
+            // Store the dark mode preference
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            $("body").removeClass("dark-class");
+            // Remove the dark mode preference
+            localStorage.removeItem('darkMode');
+        }
+    });
+</script>
 </body>
 <script src="https://kit.fontawesome.com/9e5d1ce9c2.js" crossorigin="anonymous"></script>
 <footer>

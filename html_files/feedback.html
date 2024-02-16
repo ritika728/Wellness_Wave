@@ -35,11 +35,33 @@
       background: linear-gradient(to top, #008aff, #00ffe7);
       z-index: 333333;
     }
+    
   </style>
+  <style>
+    input[type="radio"] {
+      display: none;
+    }
+  
+    label.fas.fa-star {
+      font-size: 25px;
+      color: #ccc;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  
+    input[type="radio"]:checked + label.fas.fa-star {
+      color: #ffc107; /* Change this to the desired border color when the star is selected */
+    }
+  </style>
+ <!-- toggle butto  -->
+ <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+ Integrity = "sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+ crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+ <link rel="stylesheet" href="../css_files/mode.css">
 
 </head>
 
-<body style="background-image: url('../images/main.jpg');" class="body">
+<body >
   <div id="progressbar"></div>
   <div id="scrollPath"></div>
 
@@ -57,6 +79,12 @@
         <li class="link" data-aos="fade-down"><a href="./faq.html">FAQ</a></li>
         <li class="link" data-aos="fade-down"><a href="./blog.html">Blog</a></li>
         <li class="link" data-aos="fade-down"><a href="../index.html#contact">Contact</a></li>
+        <li >
+          <label class = "toggleButton">
+            <input type = "checkbox" id = "toggle">
+            <div class = "roundButton circle" ></div>
+         </label>
+        </li>
       </ul>
       <!-- <div class="hamburger" data-aos="fade-down">
             <div class="hamburger-menu">
@@ -74,7 +102,7 @@
                   <li><a href="./html_files/faq.html" onclick="toggleMenu()">FAQ</a></li>
               </div>
           </div> -->
-      <div class="ham">
+      <div class="ham" >
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -95,7 +123,7 @@
       <label for="rate-5" class="fas fa-star"></label>
       <input type="radio" name="rate" id="rate-4">
       <label for="rate-4" class="fas fa-star"></label>
-      <input type="radio" name="rate" id="rate-3">
+      <input type="radio" name="rate" id="rate-3" >
       <label for="rate-3" class="fas fa-star"></label>
       <input type="radio" name="rate" id="rate-2">
       <label for="rate-2" class="fas fa-star"></label>
@@ -186,6 +214,29 @@
     progress.style.height = progressHeight + "%";
   }
 
+</script>
+<script>
+  // Check if there is a stored preference for dark mode
+  const darkModePreference = localStorage.getItem('darkMode');
+
+  // If there is a preference, set the initial state
+  if (darkModePreference === 'enabled') {
+      $("body").addClass("dark-class");
+      $('#toggle').prop('checked', true);
+  }
+
+  // Listen for changes to the toggle
+  $('#toggle').change(() => {
+      if ($('#toggle').is(":checked")) {
+          $("body").addClass("dark-class");
+          // Store the dark mode preference
+          localStorage.setItem('darkMode', 'enabled');
+      } else {
+          $("body").removeClass("dark-class");
+          // Remove the dark mode preference
+          localStorage.removeItem('darkMode');
+      }
+  });
 </script>
 <script src="../javascript/hambg.js"></script>
 

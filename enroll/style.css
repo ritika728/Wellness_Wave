@@ -11,7 +11,6 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  background: linear-gradient(#00796b 0%, #175c26 100%);
   padding-bottom: 50px;
   flex-direction: column;
 }
@@ -22,7 +21,20 @@ body{
   border-radius: 16px;
   padding: 30px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
  
+}
+.price{
+  color: #000;
+}
+label{
+  color: black;
+}
+li{
+  color: black;
+}
+p{
+  color: black;
 }
 .wrapper header{
   height: 55px;

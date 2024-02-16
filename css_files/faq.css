@@ -27,6 +27,7 @@
     border-radius: 5px;
     margin-bottom: 10px;
     background-color: #f9f9f9;
+    color: black;
   }
 
   .faq-answer {
@@ -37,6 +38,7 @@
     margin-bottom: 10px;
     background-color: #fff;
     transition: max-height 0.5s ease-in-out;
+    color: black;
   }
 
   h2{
