@@ -6,11 +6,17 @@ footer {
     padding: 20px 0;
     /* text-align: center; */
   }
+
+  .foot-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
   
   .footer-part {
     display: inline-block;
     vertical-align: top;
-    margin-left: 200px;
   }
   
   .footer-part h2 {
