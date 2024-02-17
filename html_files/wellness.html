@@ -39,9 +39,14 @@
             z-index: 333333;
         }
     </style>
+     <!-- toggle butto  -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+  Integrity = "sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+  <link rel="stylesheet" href="../css_files/mode.css">
 </head>
 
-<body style="background-image: url('../images/main.jpg');">
+<body >
 
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
@@ -60,6 +65,12 @@
                 <li class="link" data-aos="fade-down"><a href="./faq.html">FAQ</a></li>
                 <li class="link" data-aos="fade-down"><a href="./blog.html">Blog</a></li>
                 <li class="link" data-aos="fade-down"><a href="../index.html#contact">Contact</a></li>
+                <li >
+                    <label class = "toggleButton">
+                      <input type = "checkbox" id = "toggle">
+                      <div class = "roundButton circle" ></div>
+                   </label>
+                  </li>
             </ul>
             <!-- <div class="hamburger" data-aos="fade-down">
               <div class="hamburger-menu">
@@ -232,7 +243,30 @@
     </script>
 
     <button id="scrollToTopBtn" style="color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- dark mode -->
+<script>
+    // Check if there is a stored preference for dark mode
+    const darkModePreference = localStorage.getItem('darkMode');
 
+    // If there is a preference, set the initial state
+    if (darkModePreference === 'enabled') {
+        $("body").addClass("dark-class");
+        $('#toggle').prop('checked', true);
+    }
+
+    // Listen for changes to the toggle
+    $('#toggle').change(() => {
+        if ($('#toggle').is(":checked")) {
+            $("body").addClass("dark-class");
+            // Store the dark mode preference
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            $("body").removeClass("dark-class");
+            // Remove the dark mode preference
+            localStorage.removeItem('darkMode');
+        }
+    });
+</script>
     <script src="../javascript/hambg.js"></script>
     <script src="../javascript/index.js"></script>
 </body>

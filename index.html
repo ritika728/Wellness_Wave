@@ -19,9 +19,16 @@
   <link rel="shortcut icon" type="image/jpg" href="images/wave (1).png" />
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
+
+  <!-- toggle butto  -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+  Integrity = "sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+  <link rel="stylesheet" href="css_files/mode.css">
+
 </head>
 
-<body style="background-image: url('./images/main.jpg');" id="body_home">
+<body >
 
   <div id="progressbar"></div>
   <div id="scrollPath"></div>
@@ -52,6 +59,12 @@
         <li class="link" data-aos="fade-down"><a href="./html_files/faq.html">FAQ</a></li>
         <li class="link" data-aos="fade-down"><a href="./html_files/blog.html">Blog</a></li>
         <li class="link" data-aos="fade-down"><a href="#contact">Contact</a></li>
+        <li >
+          <label class = "toggleButton">
+            <input type = "checkbox" id = "toggle">
+            <div class = "roundButton circle" ></div>
+         </label>
+        </li>
       </ul>
       <!-- <div class="hamburger" data-aos="fade-down">
         <div class="hamburger-menu">
@@ -82,14 +95,14 @@
 
   <div class="section" id="about">
     <h2>About</h2>
-    <p>Welcome to Wellness Wave, your holistic health and fitness companion designed to empower you on your journey to
+    <p class="text">Welcome to Wellness Wave, your holistic health and fitness companion designed to empower you on your journey to
       well-being. At Wellness Wave, we believe that true wellness extends beyond mere physical fitness – it encompasses
       nutrition, mental health, community support, and lifestyle choices.</p>
   </div>
 
   <div class="section" id="mission">
     <h2>Our Mission</h2>
-    <p>Our mission is to inspire and support individuals in achieving their optimal state of health and vitality. We aim
+    <p class="text">Our mission is to inspire and support individuals in achieving their optimal state of health and vitality. We aim
       to provide a comprehensive platform that goes beyond traditional fitness tracking, offering a blend of practical
       tools, expert advice, and a supportive community to guide you on your path to wellness.</p>
   </div>
@@ -214,6 +227,30 @@
 
   <!--hamburger-menu-js-->
   <script src="./javascript/hambg.js"></script>
+  <!-- dark mode -->
+  <script>
+    // Check if there is a stored preference for dark mode
+    const darkModePreference = localStorage.getItem('darkMode');
+
+    // If there is a preference, set the initial state
+    if (darkModePreference === 'enabled') {
+        $("body").addClass("dark-class");
+        $('#toggle').prop('checked', true);
+    }
+
+    // Listen for changes to the toggle
+    $('#toggle').change(() => {
+        if ($('#toggle').is(":checked")) {
+            $("body").addClass("dark-class");
+            // Store the dark mode preference
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            $("body").removeClass("dark-class");
+            // Remove the dark mode preference
+            localStorage.removeItem('darkMode');
+        }
+    });
+</script>
 </body>
 <script src="https://kit.fontawesome.com/9e5d1ce9c2.js" crossorigin="anonymous"></script>
 <footer>
