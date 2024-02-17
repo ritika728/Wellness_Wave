@@ -5,6 +5,7 @@ footer {
     color: white;
     padding: 20px 0;
     /* text-align: center; */
+
   }
 
   .foot-up{
@@ -37,10 +38,6 @@ footer {
     flex-direction: column;
     margin-bottom: 20px;
   }
-  .footer-links{
-    text-align: left;
-    padding-left: 25px;
-  }
   
   .footer-links a, .footer-social a {
     color: white;
@@ -72,5 +69,19 @@ footer {
   }
   
   
-  /* footer end */
+@media (max-width:770px){
+  .foot-up{
+    flex-direction: column;
+  }
+  .footer-links,.footer-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #quicklink{
+    margin-left: 90px;
+  }
+}
   
