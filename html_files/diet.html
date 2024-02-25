@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css_files/home.css">
     <link rel="stylesheet" href="../css_files/footer.css">
+    <link rel="stylesheet" href="../css_files/navbar.css">
     <title>Nutrition</title>
 </head>
 <style>
@@ -28,19 +29,28 @@
         }
 </style>
 <body>
-    <header>
-        <h1><a href="../index.html" style="text-decoration: none;">WELLNESS HUB</a></h1>
-    </header>
+  <div class="nav-container">
+    <nav class="newNav">
+      <a href="../index.html" class="nav__logo" data-aos="fade-right">Wellness Wave<span>.</span></a>
 
-    <div class="navbar">
-        <ul>
-            <li class="navlist"><a href="../index.html" class="home">Home</a></li>
-            <li class="navlist"><a href="fitnesstracking.html" class="home">Tracking</a></li>
-            <li class="navlist"><a href="wellness.html" class="home">Wellness</a></li>
-            <!-- <li><a href="testimonial.html" class="home">Testimonial</a></li> -->
-            <li class="navlist"><a href="faq.html" class="home">FAQ</a></li>
-        </ul>
-    </div>
+      <ul class="navLinks">
+        <li class="link" data-aos="fade-down"><a href="../index.html">Home</a></li>
+        <li class="link" data-aos="fade-down"><a href="../html_files/fitnesstracking.html">Tracking</a></li>
+        <li class="link" data-aos="fade-down"><a href="../html_files/wellness.html">Wellness</a></li>
+        <li class="link" data-aos="fade-down"><a href="../enroll/index.html">Enroll Now</a></li>
+        <li class="link" data-aos="fade-down"><a href="../html_files/feedback.html">Rate Us</a></li>
+        <li class="link" data-aos="fade-down"><a href="../html_files/faq.html">FAQ</a></li>
+        <li class="link" data-aos="fade-down"><a href="../html_files/blog.html">Blog</a></li>
+        <li class="link" data-aos="fade-down"><a href="../index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="ham">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </div>
     <div class="container3">
         <h1 style="text-align: center;text-decoration: underline;">Diet</h1>
         <p style="text-align: center;">A simple 30-day beginner's diet plan. Keep in mind that individual nutritional needs may vary, so adjust portion sizes accordingly.</p>
